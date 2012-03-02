@@ -1,0 +1,170 @@
+%Resume.txt
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+
+\newcommand{\name}{Nicolas Kassis}
+\newcommand{\addr}{P.O. Box 964, Crawfordville, FL, 32326}
+\newcommand{\phone}{(850)388-4502}
+\newcommand{\email}{nic.kassis@gmail.com}
+\newcommand{\bigname}[1]{
+	\begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+       \begin{reslist}{Languages:}
+		\ressubitem{Bilingual: French, English}
+        \end{reslist}
+	\begin{reslist}{Operating Systems:}
+                \ressubitem{Linux (Ubuntu, Debian, Gentoo, Red Hat, Mandrake, CentOS), Vyatta OFR, Mac OS X, FreeBSD, Solaris, Windows 98/2000/XP/7, Windows Server 2003/2008}
+	\end{reslist}
+	\begin{reslist}{Computer Languages:}
+	  \ressubitem{Javascript, Ruby, Clojure, Common Lisp, Scheme, Python, Java, Perl, C, C++, Bash, SQL,\LaTeX}
+        \end{reslist}
+        \begin{reslist}{Tools and Systems}
+	\ressubitem{WebGL, OpenGL,OpenGL ES, HTML/HTML5, CSS,  XML, NodeJS, JQuery, Ruby on Rails, Sinatra, Git, Subversion, Linode, Amazon S3/EC2, Apache, NGINX, BIND, ISC DHCP, MySQL, PostgreSQL Samba, Postfix, OpenLDAP, NFS, NIS, OpenSSH, Nagios, iptables,  Citrix, Active Directory, Microsoft DNS, Cisco IOS, Vyatta,  Microsoft Office, OpenVPN }
+        \end{reslist}
+        \begin{reslist}{Other Skills}
+          \ressubitem{Basic accounting}
+          \ressubitem{Team work} 
+        \end{reslist}
+
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Education}
+
+  \begin{ressubsec}{Florida State University}{Tallahassee, Fl}{Major in Pure Mathematics}
+		\ressubitem{Graduation date: August 2009}
+  \end{ressubsec}
+\begin{ressubsec}{Tallahassee Community College}{Tallahassee, Fl}{Associates of Arts, General Education}
+		\ressubitem{Graduation date: December, 2006}
+\end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+  
+    \begin{ressubsec}{Montreal Neurological Institute, McGill University, Brain Imaging Center, GBRAIN Project}{Montreal, Qc, Canada}{Software Developer: January 2010-Present}
+      \ressubitem {Develop web based 3D Visualization tools called BrainBrowser in Javascript and WebGL for brain imaging data}
+      \ressubitem {Help develop a  Ruby on Rails applications called CBRAIN for managing research data, research tools and computing clusters}
+      \ressubitem {Develop interface to Amazon cloud}
+      \ressubitem {Web Frontend development using Javascript} 
+      \ressubitem {Work with researchers to develop needed features}
+      \ressubitem {Implement a testing framework for unit and integration testing using RSpec and Cucumber}
+      \ressubitem {Advise on network and system related issues}
+      \ressubitem {Demonstrate projects for colaborators and visitors}
+      \ressubitem {Represent projects at conferences and events}
+    \end{ressubsec}
+
+  \begin{ressubsec}{Florida State University, Academic and Professional Program Services}{Tallahassee, Fl}{Network Administor/Software Developer: May 2008-July 2009}
+    \ressubitem{Manage Mac OSX and Windows Workstations}
+    \ressubitem{Maintain the departmental Active Directory Domain}
+    \ressubitem{Maintain department Linux Servers, including Web, DNS, DHCP, VPN, Firewall}
+    \ressubitem{Maintain the departmental network infrastructure including Cisco Routers/switches}
+    \ressubitem{Support a high availability website and video streaming service}
+    \ressubitem{Develop tools and scripts to automate administrative tasks}
+    \ressubitem{Create and Maintain documentation for network and applications}
+    \ressubitem{Maintain and develop the departmental webiste and web applications}
+    \ressubitem{Assist users with network related problems}
+  \end{ressubsec}
+
+	\begin{ressubsec}{Florida State University, Facilities}{Tallahassee, Fl}
+{Network Administrator: May 2006--May 2008}
+	  \ressubitem{Co-manage 200  Windows XP workstations.}
+	  \ressubitem{Maintain the departmental Active Directory Domain}
+          \ressubitem{Maintain department Linux servers, including Web, DNS, DHCP, Router, VPN}
+	  \ressubitem{Develop tools and scripts to automate administrative tasks}
+	  \ressubitem{Create and maintain documentation for Network and Applications}
+	  \ressubitem{Maintain and develop the departmental website and web applications}
+	  \ressubitem{Assist users with network related problems}
+	  \ressubitem{Manage the departmental EMC NAS}
+	  \ressubitem{Implement and test backup systems} 
+	  \ressubitem{Create and maintain a network monitoring infrastructure using Nagios}
+          \ressubitem{Co-manage an Oracle 9i Enterprise database running on Solaris}
+	\end{ressubsec}
+\end{ressection}
+
+
+
+\end{document}
+
+
+
