@@ -1,66 +1,74 @@
-                                  Nicolas Kassis
-                           Hanson, MA · (206) 818-1227 · nic.kassis@gmail.com
-                        linkedin.com/in/nicolas-kassis-2b71a27 · github.com/nkassis
+                                    Nicolas Kassis
+       Hanson, MA · (206) 818-1227 · nic.kassis@gmail.com · linkedin.com/in/nicolas-kassis-2b71a27
+             VP Engineering & Product · Enterprise AI/SaaS · InsurTech & Financial Services
 
 Summary
-Senior engineering leader with 9+ years at Indico Data spanning three major platform re-architectures,
-promoted from backend engineer to Vice President of Engineering & Product reporting to the CEO. Own
-engineering and product for two enterprise AI SaaS products serving InsurTech underwriting/claims and
-financial-services intelligent document processing. Under my leadership, the engineering org migrated to a
-full generative-AI stack (LLM agents, RAG, evaluation, document intelligence) and shipped an agentic
-InsurTech underwriting and claims application. Hands-on with design, architecture, and complex
-customer-facing engineering. Prior: GMO trading systems, Amazon identity/OAuth platform.
+Engineering and product executive who scales platforms from early-stage to production enterprise SaaS,
+most recently as Vice President of Engineering & Product at Indico Data reporting to the CEO. Led a
+re-platforming to a generative-AI stack (LLM agents, RAG, evaluation, document intelligence) and delivered
+an agentic InsurTech underwriting and claims application on top of it. Hands-on with architecture and
+customer-facing engineering across three major platform re-architectures over nine years. Prior: GMO
+trading systems, Amazon identity/OAuth platform.
+Highlights
+   • Promoted from backend engineer to VP of Engineering & Product over 9 years at Indico Data,
+     reporting to the CEO
+   • Grew Workspace into the company’s fastest-growing product line: 5+ new accounts and $500K new
+     ARR in 8 months
+   • Reduced R&D spend $1M+ year-over-year while growing customers and processing volume
+   • Led design and delivery of an agentic insurance application that processes underwriting submissions
+     and claims end-to-end
+   • Migrated an enterprise platform from a discriminative deep-learning stack to a full generative-AI stack
+     (LLM agents, RAG, evaluation)
 
 Experience
-   • Indico Data                                                         Boston, MA · Jun 2022 – Present
+   • Indico Data                                                                Boston, MA · Jun 2022 – Sep 2026
      Vice President of Engineering & Product
-        – Report directly to the CEO; lead a 23-person organization with 6 direct reports (4 directors,
-          principal engineer, TPM) covering Workspace, Intake, DevOps, QA, and product operations, and
-          own roadmap and delivery for two enterprise products serving InsurTech underwriting/claims
-          and financial-services intelligent document processing
-        – Doubled as primary product manager across Workspace, Intake, and DevOps since 2024 after a
-          company-wide RIF eliminated the product function; own discovery and roadmap, partner with
-          SVP Marketing and Senior Product Marketing on positioning, and participate in InsurTech
-          industry events (ITC Vegas, InsurTech Insights NY/London); grew Workspace to the company’s
-          fastest-growing product line – 5+ new accounts and $500K new ARR in the last 8 months
-        – Defined and priced a $500K, 12-month extended-support contract with a top Intake customer,
-          partnering with Customer Success on scope clarification and negotiation, expanding recurring
-          revenue on a mature account
-        – Partnered with R&D to integrate a generative-AI stack (LLM agents, RAG, LLM-based evaluation,
-          document intelligence) into the platform as a full alternative to the existing discriminative
-          deep-learning stack, delivered across both products
-        – Led the two-year design and development of Workspace, an agentic insurance application for
-          underwriting and claims that layers event-driven orchestration and an agent loop over Intake to
-          autonomously process submissions and claims end-to-end
-        – Executed a zero-cost engineering rebalancing in 2026 under tight budget constraints: shifted
-          capacity to Workspace to fuel growth, moved Intake to a stability-and-maintenance cadence, and
-          aligned headcount with product lifecycle
-        – Reduced R&D spend by $1M+ year-over-year while growing customers and processing volume,
-          via AWS infrastructure re-architecture and a hybrid US / LatAm nearshore / India-QA delivery
-          model with specialist contractors
-        – Coordinated cross-functional response to a major security incident, directing audit, infrastructure
-          rebuild, and recovery across engineering, DevOps, and security teams
-   • Indico Data                                                     Boston, MA · Apr 2017 – Jun 2022
-     Sr Software Engineer, Backend (2017–2019) → Software Engineering Manager, Backend (2019–2021) → Sr
-     Director of Platform Engineering (2021–2022)
-        – Joined a 4-engineer team and helped drive the re-architecture of Indico’s SaaS API product into
-          Intake, the document-processing platform still in production today; personally designed and built
-          core services (authentication, permissioning, model management, dataset and label-storage) that
-          set the base application structure
-         – Promoted through IC to backend engineering manager and Senior Director of Platform
-           Engineering; led the backend team, added QA scope mid-tenure, and established hiring,
-           code-review, release, and on-call practices as Indico scaled from early-stage to production
-           enterprise SaaS
-  • GMO LLC                                                            Boston, MA · Apr 2015 – Apr 2017
+          Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.
+          Led a 23-person engineering and product organization (6 direct reports: 4 directors, principal
+          engineer, TPM) across Workspace, Intake, DevOps, QA, and product operations. Owned
+          roadmap, discovery, and delivery for two enterprise products; acted as primary product manager
+          after the 2024 RIF eliminated the product function.
+        – Grew Workspace into the company’s fastest-growing product line – 5+ new accounts and $500K
+          new ARR in 8 months
+        – Defined and priced multiple Intake support-expansion deals with Customer Success; largest was
+          a $500K, 12-month full extended-release-support contract with a top account
+        – Reduced R&D spend by $1M+ YoY while growing customers and processing volume, via AWS
+          re-architecture and a hybrid US / LatAm / India delivery model
+        – Led design and build of Workspace, an agentic app that layers event-driven orchestration and an
+          agent loop over Intake to autonomously process underwriting submissions and claims end-to-end
+        – Partnered with R&D to integrate a generative-AI stack (LLM agents, RAG, evaluation, document
+          intelligence) as an alternative to the discriminative DL stack across both products
+        – Rebalanced engineering capacity within a flat budget in 2026: shifted headcount to Workspace to
+          fuel growth and moved Intake to a stability cadence
+        – Drove agentic transformation in engineering (with CTO — coding/review/log/ticket agents) and
+          product (Claude co-prototyping replaced Figma; requirement/roadmap agents)
+        – Owned product positioning with SVP Marketing and Product Marketing; represented the
+          company at ITC Vegas and InsurTech Insights NY/London
+         – Ran a 6-week release cadence to hit customer CVE/security SLAs, and directed cross-functional
+           response to a major security incident (audit, rebuild, recovery)
+  • Indico Data                                                      Boston, MA · Apr 2017 – Jun 2022
+    Senior Software Engineer, Backend (2017–2019) → Software Engineering Manager, Backend (2019–2021) →
+    Senior Director of Platform Engineering (2021–2022)
+         – Joined a 4-engineer team and helped re-architect Indico’s SaaS API into Intake, the
+           document-processing platform still in production; personally designed and built core services
+           (authentication, permissioning, model management, dataset and label storage) that set the base
+           application structure
+         – Promoted through IC to backend engineering manager and Senior Director of Platform
+           Engineering; led the backend team as it grew alongside Indico from a 4-engineer group toward
+           the 23-person org later led as VP, added QA scope mid-tenure, and established hiring,
+           code-review, release, and on-call practices
+  • GMO LLC                                                                      Boston, MA · Apr 2015 – Apr 2017
     Senior Software Engineer
+           Global investment manager; built trading and portfolio-implementation systems.
          – Designed and built RESTful services and APIs for reference data, trade and order management,
            and holdings retrieval, plus a single-page web application used by portfolio implementers
          – Championed and implemented an automated release process, reducing release cycle from 4
            weeks to 1 week
          – Built reusable cross-cutting components and a shared web-component library to reduce effort for
            new microservices and data-rich internal applications
-  • Amazon.com, eCommerce Platform Services                              Seattle, WA · Jul 2012 – Mar 2015
+  • Amazon.com, eCommerce Platform Services                                        Seattle, WA · Jul 2012 – Mar 2015
     Software Development Engineer
+           eCommerce Platform Services — identity, authentication, and authorization platform.
          – Developed and maintained the OpenID and OAuth web platform handling identity,
            authentication, and authorization for all Amazon and mobile applications
          – Led a complete redesign of Amazon’s authentication web front-end for the retail site on mobile
@@ -70,30 +78,19 @@ Experience
 
 Skills
   • Leadership
-         – Engineering organization management, org design, hiring, mentorship, managing managers
-         – Product management, roadmap ownership, customer discovery, positioning, GTM partnership,
-           technical pre-sales
-         – SDLC maturity, secure development, incident response, manager on-call for enterprise SaaS;
-           hybrid US / LatAm nearshore / offshore QA delivery models
-
+      – Engineering organization management, org design, hiring, mentorship, managing managers
+      – Product management, roadmap ownership, customer discovery, positioning, GTM partnership,
+        technical pre-sales
+      – SDLC maturity, secure development, incident response, executive escalation point for enterprise
+        incidents
   • AI / ML
-         – Generative AI, LLM agents, agentic orchestration, RAG (pgvector), LLM-based evaluation,
-           document intelligence, intelligent document processing (IDP)
-
-  • Languages
-         – Python, TypeScript, JavaScript, Java, C#, SQL, Bash
-
-  • Backend & Data
-         – PostgreSQL, pgvector, Redis, Kafka, Celery, REST APIs, GraphQL, microservices, OAuth 2.0 /
-           OIDC, SAML 2.0, RBAC
-
-  • Cloud & Infrastructure
-         – AWS (Lambda, SQS, SNS, ALB, NLB, WAF, IRSA), GCP, Azure, Docker, Kubernetes, Terraform,
-           Crossplane, CI/CD, observability (Prometheus, Grafana, SigNoz)
-
-  • Frontend
-         – React, Node.js, WebGL
+      – Generative AI, LLM agents, agentic orchestration, RAG (pgvector), LLM-based evaluation,
+         document intelligence, intelligent document processing (IDP)
+  • Technical
+      – Python, TypeScript/JavaScript, Java, SQL · PostgreSQL/pgvector, Redis, Kafka, REST/GraphQL,
+        OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD,
+        observability · React, Node.js
 
 Education
-  • B.Sc. Pure Mathematics (Minor: Business), Florida State University, August 2009
+  • B.Sc. Pure Mathematics (Minor: Business), Florida State University
 

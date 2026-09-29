@@ -18,7 +18,7 @@
   pdftitle={Nicolas Kassis - Resume},
   pdfauthor={Nicolas Kassis},
   pdfsubject={Engineering Leadership Resume},
-  pdfkeywords={VP Engineering, CTO, Head of Engineering, Platform Engineering, Generative AI, LLM, Agents, Agentic AI, RAG, pgvector, MLOps, SaaS, Enterprise Software, Intelligent Document Processing, InsurTech, Insurance Underwriting, Claims, Product Management, Roadmap, OAuth, SAML, RBAC, GraphQL, Kafka, Terraform, Crossplane, Prometheus, Grafana, SigNoz, AWS Lambda}
+  pdfkeywords={VP Engineering, CTO, Head of Engineering, Platform Engineering, Generative AI, LLM, Agents, Agentic AI, RAG, pgvector, MLOps, SaaS, Enterprise Software, Intelligent Document Processing, InsurTech, Insurance Underwriting, Claims, Product Management, Roadmap, OAuth, SAML, GraphQL, Kafka, Terraform}
 }
 
 \pagestyle{empty}
@@ -37,10 +37,14 @@
 \newcommand{\phone}{(206) 818-1227}
 \newcommand{\email}{nic.kassis@gmail.com}
 \newcommand{\linkedinurl}{linkedin.com/in/nicolas-kassis-2b71a27}
-\newcommand{\githuburl}{github.com/nkassis}
 
 \newcommand{\bigname}[1]{
   \begin{center}\fontfamily{phv}\selectfont\Huge\bfseries#1\end{center}
+}
+
+% Tagline under contact block
+\newcommand{\headline}[1]{
+  \begin{center}\fontfamily{phv}\selectfont\small\bfseries#1\end{center}
 }
 
 % A ressection is a main section (<H1>Section</H1>)
@@ -53,22 +57,31 @@
   \end{itemize}
 }
 
-% A resitem is a simple list element in a ressection (first level)
+% First-level item in a ressection
 \newcommand{\resitem}[1]{
   \vspace{-4pt}
 \item \begin{flushleft} #1 \end{flushleft}
 }
 
-% A ressubitem is a simple list element in anything but a ressection (second level)
+% Second-level item (bullet in a job)
 \newcommand{\ressubitem}[1]{
   \vspace{-1pt}
 \item \begin{flushleft} #1 \end{flushleft}
 }
 
-% A resbigitem is a complex list element for jobs and education:
-%   Arg 1: Company / school
-%   Arg 2: Location + dates (right-aligned via \hfill)
-%   Arg 3: Title
+% Italic company-context subtitle inside a job entry (unbulleted)
+\newcommand{\rescontext}[1]{
+  \vspace{-3pt}
+\item[] \begin{flushleft} \textit{\small #1} \end{flushleft}
+}
+
+% Non-bulleted scope paragraph inside a job entry
+\newcommand{\resscope}[1]{
+  \vspace{-3pt}
+\item[] \begin{flushleft} #1 \end{flushleft}
+}
+
+% Job header (company / location-dates / title)
 \newcommand{\resbigitem}[3]{
   \vspace{-5pt}
 \item
@@ -76,7 +89,7 @@
   \textit{#3}
 }
 
-% List with a resbigitem header (used per job)
+% Job entry environment
 \newenvironment{ressubsec}[3]{
   \resbigitem{#1}{#2}{#3}
   \vspace{-2pt}
@@ -101,9 +114,9 @@
 \vspace{-8pt} \rule{\textwidth}{1pt}
 \vspace{2pt}
 \begin{center}
-  {\small \location{} \; $\cdot$ \; \phone{} \; $\cdot$ \; \href{mailto:\email}{\email}} \\
-  {\small \href{https://\linkedinurl}{\linkedinurl} \; $\cdot$ \; \href{https://\githuburl}{\githuburl}}
+  {\small \location{} \; $\cdot$ \; \phone{} \; $\cdot$ \; \href{mailto:\email}{\email} \; $\cdot$ \; \href{https://\linkedinurl}{\linkedinurl}}
 \end{center}
+\headline{VP Engineering \& Product $\cdot$ Enterprise AI/SaaS $\cdot$ InsurTech \& Financial Services}
 \vspace{6pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,35 +125,49 @@
 \vspace{3pt}
 
 \begin{flushleft}
-Senior engineering leader with 9+ years at Indico Data spanning three major platform re-architectures, promoted from backend engineer to Vice President of Engineering \& Product reporting to the CEO. Own engineering and product for two enterprise AI SaaS products serving InsurTech underwriting/claims and financial-services intelligent document processing. Under my leadership, the engineering org migrated to a full generative-AI stack (LLM agents, RAG, evaluation, document intelligence) and shipped an agentic InsurTech underwriting and claims application. Hands-on with design, architecture, and complex customer-facing engineering. Prior: GMO trading systems, Amazon identity/OAuth platform.
+Engineering and product executive who scales platforms from early-stage to production enterprise SaaS, most recently as Vice President of Engineering \& Product at Indico Data reporting to the CEO. Led a re-platforming to a generative-AI stack (LLM agents, RAG, evaluation, document intelligence) and delivered an agentic InsurTech underwriting and claims application on top of it. Hands-on with architecture and customer-facing engineering across three major platform re-architectures over nine years. Prior: GMO trading systems, Amazon identity/OAuth platform.
 \end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Highlights}
+  \ressubitem{Promoted from backend engineer to VP of Engineering \& Product over 9 years at Indico Data, reporting to the CEO}
+  \ressubitem{Grew Workspace into the company's fastest-growing product line: 5+ new accounts and \$500K new ARR in 8 months}
+  \ressubitem{Reduced R\&D spend \$1M+ year-over-year while growing customers and processing volume}
+  \ressubitem{Led design and delivery of an agentic insurance application that processes underwriting submissions and claims end-to-end}
+  \ressubitem{Migrated an enterprise platform from a discriminative deep-learning stack to a full generative-AI stack (LLM agents, RAG, evaluation)}
+\end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
 
-  \begin{ressubsec}{Indico Data}{Boston, MA \; $\cdot$ \; Jun 2022 -- Present}{Vice President of Engineering \& Product}
-    \ressubitem{Report directly to the CEO; lead a 23-person organization with 6 direct reports (4 directors, principal engineer, TPM) covering Workspace, Intake, DevOps, QA, and product operations, and own roadmap and delivery for two enterprise products serving InsurTech underwriting/claims and financial-services intelligent document processing}
-    \ressubitem{Doubled as primary product manager across Workspace, Intake, and DevOps since 2024 after a company-wide RIF eliminated the product function; own discovery and roadmap, partner with SVP Marketing and Senior Product Marketing on positioning, and participate in InsurTech industry events (ITC Vegas, InsurTech Insights NY/London); grew Workspace to the company's fastest-growing product line -- 5+ new accounts and \$500K new ARR in the last 8 months}
-    \ressubitem{Defined and priced a \$500K, 12-month extended-support contract with a top Intake customer, partnering with Customer Success on scope clarification and negotiation, expanding recurring revenue on a mature account}
-    \ressubitem{Partnered with R\&D to integrate a generative-AI stack (LLM agents, RAG, LLM-based evaluation, document intelligence) into the platform as a full alternative to the existing discriminative deep-learning stack, delivered across both products}
-    \ressubitem{Led the two-year design and development of Workspace, an agentic insurance application for underwriting and claims that layers event-driven orchestration and an agent loop over Intake to autonomously process submissions and claims end-to-end}
-    \ressubitem{Executed a zero-cost engineering rebalancing in 2026 under tight budget constraints: shifted capacity to Workspace to fuel growth, moved Intake to a stability-and-maintenance cadence, and aligned headcount with product lifecycle}
-    \ressubitem{Reduced R\&D spend by \$1M+ year-over-year while growing customers and processing volume, via AWS infrastructure re-architecture and a hybrid US / LatAm nearshore / India-QA delivery model with specialist contractors}
-    \ressubitem{Coordinated cross-functional response to a major security incident, directing audit, infrastructure rebuild, and recovery across engineering, DevOps, and security teams}
+  \begin{ressubsec}{Indico Data}{Boston, MA \; $\cdot$ \; Jun 2022 -- Sep 2026}{Vice President of Engineering \& Product}
+    \rescontext{Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.}
+    \resscope{Led a 23-person engineering and product organization (6 direct reports: 4 directors, principal engineer, TPM) across Workspace, Intake, DevOps, QA, and product operations. Owned roadmap, discovery, and delivery for two enterprise products; acted as primary product manager after the 2024 RIF eliminated the product function.}
+    \ressubitem{Grew Workspace into the company's fastest-growing product line -- 5+ new accounts and \$500K new ARR in 8 months}
+    \ressubitem{Defined and priced multiple Intake support-expansion deals with Customer Success; largest was a \$500K, 12-month full extended-release-support contract with a top account}
+    \ressubitem{Reduced R\&D spend by \$1M+ YoY while growing customers and processing volume, via AWS re-architecture and a hybrid US / LatAm / India delivery model}
+    \ressubitem{Led design and build of Workspace, an agentic app that layers event-driven orchestration and an agent loop over Intake to autonomously process underwriting submissions and claims end-to-end}
+    \ressubitem{Partnered with R\&D to integrate a generative-AI stack (LLM agents, RAG, evaluation, document intelligence) as an alternative to the discriminative DL stack across both products}
+    \ressubitem{Rebalanced engineering capacity within a flat budget in 2026: shifted headcount to Workspace to fuel growth and moved Intake to a stability cadence}
+    \ressubitem{Drove agentic transformation in engineering (with CTO --- coding/review/log/ticket agents) and product (Claude co-prototyping replaced Figma; requirement/roadmap agents)}
+    \ressubitem{Owned product positioning with SVP Marketing and Product Marketing; represented the company at ITC Vegas and InsurTech Insights NY/London}
+    \ressubitem{Ran a 6-week release cadence to hit customer CVE/security SLAs, and directed cross-functional response to a major security incident (audit, rebuild, recovery)}
   \end{ressubsec}
 
-  \begin{ressubsec}{Indico Data}{Boston, MA \; $\cdot$ \; Apr 2017 -- Jun 2022}{Sr Software Engineer, Backend (2017--2019) $\to$ Software Engineering Manager, Backend (2019--2021) $\to$ Sr Director of Platform Engineering (2021--2022)}
-    \ressubitem{Joined a 4-engineer team and helped drive the re-architecture of Indico's SaaS API product into Intake, the document-processing platform still in production today; personally designed and built core services (authentication, permissioning, model management, dataset and label-storage) that set the base application structure}
-    \ressubitem{Promoted through IC to backend engineering manager and Senior Director of Platform Engineering; led the backend team, added QA scope mid-tenure, and established hiring, code-review, release, and on-call practices as Indico scaled from early-stage to production enterprise SaaS}
+  \begin{ressubsec}{Indico Data}{Boston, MA \; $\cdot$ \; Apr 2017 -- Jun 2022}{Senior Software Engineer, Backend (2017--2019) $\to$ Software Engineering Manager, Backend (2019--2021) $\to$ Senior Director of Platform Engineering (2021--2022)}
+    \ressubitem{Joined a 4-engineer team and helped re-architect Indico's SaaS API into Intake, the document-processing platform still in production; personally designed and built core services (authentication, permissioning, model management, dataset and label storage) that set the base application structure}
+    \ressubitem{Promoted through IC to backend engineering manager and Senior Director of Platform Engineering; led the backend team as it grew alongside Indico from a 4-engineer group toward the 23-person org later led as VP, added QA scope mid-tenure, and established hiring, code-review, release, and on-call practices}
   \end{ressubsec}
 
   \begin{ressubsec}{GMO LLC}{Boston, MA \; $\cdot$ \; Apr 2015 -- Apr 2017}{Senior Software Engineer}
+    \rescontext{Global investment manager; built trading and portfolio-implementation systems.}
     \ressubitem{Designed and built RESTful services and APIs for reference data, trade and order management, and holdings retrieval, plus a single-page web application used by portfolio implementers}
     \ressubitem{Championed and implemented an automated release process, reducing release cycle from 4 weeks to 1 week}
     \ressubitem{Built reusable cross-cutting components and a shared web-component library to reduce effort for new microservices and data-rich internal applications}
   \end{ressubsec}
 
   \begin{ressubsec}{Amazon.com, eCommerce Platform Services}{Seattle, WA \; $\cdot$ \; Jul 2012 -- Mar 2015}{Software Development Engineer}
+    \rescontext{eCommerce Platform Services --- identity, authentication, and authorization platform.}
     \ressubitem{Developed and maintained the OpenID and OAuth web platform handling identity, authentication, and authorization for all Amazon and mobile applications}
     \ressubitem{Led a complete redesign of Amazon's authentication web front-end for the retail site on mobile and desktop worldwide}
     \ressubitem{Built the Login with Amazon (OAuth) developer console used by thousands of external developers to register, configure, and monitor applications consuming Amazon.com APIs}
@@ -153,28 +180,19 @@ Senior engineering leader with 9+ years at Indico Data spanning three major plat
   \begin{reslist}{Leadership}
     \ressubitem{Engineering organization management, org design, hiring, mentorship, managing managers}
     \ressubitem{Product management, roadmap ownership, customer discovery, positioning, GTM partnership, technical pre-sales}
-    \ressubitem{SDLC maturity, secure development, incident response, manager on-call for enterprise SaaS; hybrid US / LatAm nearshore / offshore QA delivery models}
+    \ressubitem{SDLC maturity, secure development, incident response, executive escalation point for enterprise incidents}
   \end{reslist}
   \begin{reslist}{AI / ML}
     \ressubitem{Generative AI, LLM agents, agentic orchestration, RAG (pgvector), LLM-based evaluation, document intelligence, intelligent document processing (IDP)}
   \end{reslist}
-  \begin{reslist}{Languages}
-    \ressubitem{Python, TypeScript, JavaScript, Java, C\#, SQL, Bash}
-  \end{reslist}
-  \begin{reslist}{Backend \& Data}
-    \ressubitem{PostgreSQL, pgvector, Redis, Kafka, Celery, REST APIs, GraphQL, microservices, OAuth 2.0 / OIDC, SAML 2.0, RBAC}
-  \end{reslist}
-  \begin{reslist}{Cloud \& Infrastructure}
-    \ressubitem{AWS (Lambda, SQS, SNS, ALB, NLB, WAF, IRSA), GCP, Azure, Docker, Kubernetes, Terraform, Crossplane, CI/CD, observability (Prometheus, Grafana, SigNoz)}
-  \end{reslist}
-  \begin{reslist}{Frontend}
-    \ressubitem{React, Node.js, WebGL}
+  \begin{reslist}{Technical}
+    \ressubitem{Python, TypeScript/JavaScript, Java, SQL $\cdot$ PostgreSQL/pgvector, Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML $\cdot$ AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD, observability $\cdot$ React, Node.js}
   \end{reslist}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Education}
-  \ressubitem{B.Sc. Pure Mathematics (Minor: Business), Florida State University, August 2009}
+  \ressubitem{B.Sc. Pure Mathematics (Minor: Business), Florida State University}
 \end{ressection}
 
 \end{document}
