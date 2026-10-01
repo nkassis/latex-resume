@@ -1,6 +1,6 @@
-.PHONY: all pdf txt clean distclean
+.PHONY: all pdf txt md clean distclean
 
-all: pdf txt
+all: pdf txt md
 
 pdf: Resume.pdf
 
@@ -13,8 +13,13 @@ txt: Resume.txt
 Resume.txt: Resume.pdf
 	pdftotext -layout Resume.pdf Resume.txt
 
+md: Resume.md
+
+Resume.md: Resume.tex tex2md.py
+	python3 tex2md.py Resume.tex Resume.md
+
 clean:
 	rm -f Resume.aux Resume.log Resume.out Resume.fdb_latexmk Resume.fls Resume.synctex.gz Resume.toc
 
 distclean: clean
-	rm -f Resume.pdf Resume.txt
+	rm -f Resume.pdf Resume.txt Resume.md
