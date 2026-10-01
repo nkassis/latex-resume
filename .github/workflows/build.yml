@@ -56,13 +56,13 @@ jobs:
             Resume.txt
 
       - name: Upload Pages artifact
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' && vars.ENABLE_PAGES_DEPLOY == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
   deploy:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' && vars.ENABLE_PAGES_DEPLOY == 'true'
     needs: build
     runs-on: ubuntu-latest
     environment:
