@@ -60,15 +60,19 @@ Seattle, WA · Jul 2012 – Mar 2015
 ## Skills
 
 **Leadership**
-- Engineering organization management, org design, hiring, mentorship, managing managers
-- Product management, roadmap ownership, customer discovery, positioning, GTM partnership, technical pre-sales
-- SDLC maturity, secure development, incident response, executive escalation point for enterprise incidents
+- Engineering organization management, org design, recruiting and hiring, coaching and mentorship, managing managers
+- R&D budgeting, cost optimization, vendor and contract negotiations
+- Agile delivery, SDLC maturity, secure development, incident response, executive escalation point for enterprise incidents
+
+**Product**
+- Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity planning, requirements/PRDs, backlog prioritization
+- UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership, technical pre-sales
 
 **AI / ML**
 - Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence, intelligent document processing (IDP)
 
 **Technical**
-- Python, TypeScript/JavaScript, Java, SQL · PostgreSQL, Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD, observability · React, Node.js
+- Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript, Java, C#, Ruby, SQL · PostgreSQL, Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD, observability · React, Node.js, Ruby on Rails
 
 ## Education
 

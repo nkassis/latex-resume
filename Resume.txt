@@ -45,9 +45,9 @@ Experience
         – Worked closely with Marketing to inject customer and market feedback into product positioning;
           represented the company at multiple events including ITC Vegas and InsurTech Insights
           NY/London
-         – Directed the technical streams of a company-wide response to a major security incident earlier in
-           2026; Indico received high praise from customers for its transparent and swift response
-         – Earlier (2017–2022): one of 4 engineers who re-architected Indico’s SaaS API into Indico Intake;
+        – Directed the technical streams of a company-wide response to a major security incident earlier in
+          2026; Indico received high praise from customers for its transparent and swift response
+         – Earlier (2017–2022): one of 4 engineers who re-architected Indico’s SaaS API into Indico Intake;
            personally built core services (authentication, permissioning, model management, dataset and
            label storage) that set the base application structure
          – Intake grew into an Intelligent Document Processing platform handling billions of documents a
@@ -76,20 +76,26 @@ Experience
 
 Skills
   • Leadership
-         – Engineering organization management, org design, hiring, mentorship, managing managers
-         – Product management, roadmap ownership, customer discovery, positioning, GTM partnership,
-           technical pre-sales
-         – SDLC maturity, secure development, incident response, executive escalation point for enterprise
-           incidents
+      – Engineering organization management, org design, recruiting and hiring, coaching and
+        mentorship, managing managers
+      – R&D budgeting, cost optimization, vendor and contract negotiations
+      – Agile delivery, SDLC maturity, secure development, incident response, executive escalation point
+        for enterprise incidents
+
+  • Product
+      – Product management, product strategy and vision, roadmap ownership, OKRs, release and
+        capacity planning, requirements/PRDs, backlog prioritization
+      – UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership,
+        technical pre-sales
 
   • AI / ML
-         – Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document
-           intelligence, intelligent document processing (IDP)
+      – Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document
+         intelligence, intelligent document processing (IDP)
 
   • Technical
-         – Python, TypeScript/JavaScript, Java, SQL · PostgreSQL, Redis, Kafka, REST/GraphQL, OAuth
-           2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD, observability ·
-           React, Node.js
+      – Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript, Java, C#, Ruby, SQL · PostgreSQL,
+        Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker,
+        Terraform, CI/CD, observability · React, Node.js, Ruby on Rails
 
 Education
   • B.Sc. Pure Mathematics (Minor: Business), Florida State University
