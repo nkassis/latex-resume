@@ -70,9 +70,10 @@ Seattle, WA · Jul 2012 – Mar 2015
 
 **AI / ML**
 - Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence, intelligent document processing (IDP)
+- AI-assisted development: coding agents (e.g., Claude Code), agent harnesses, AI design and prototyping tools
 
 **Technical**
-- Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript, Java, C#, Ruby, SQL · PostgreSQL, Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD, observability · React, Node.js, Ruby on Rails
+- Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript (Node.js), Java, C#, Ruby, SQL · PostgreSQL, Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker, Terraform, CI/CD, observability · React, Ruby on Rails
 
 ## Education
 

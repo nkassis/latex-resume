@@ -81,21 +81,20 @@ Skills
       – R&D budgeting, cost optimization, vendor and contract negotiations
       – Agile delivery, SDLC maturity, secure development, incident response, executive escalation point
         for enterprise incidents
-
   • Product
       – Product management, product strategy and vision, roadmap ownership, OKRs, release and
         capacity planning, requirements/PRDs, backlog prioritization
       – UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership,
         technical pre-sales
-
   • AI / ML
       – Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document
          intelligence, intelligent document processing (IDP)
-
+      – AI-assisted development: coding agents (e.g., Claude Code), agent harnesses, AI design and
+         prototyping tools
   • Technical
-      – Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript, Java, C#, Ruby, SQL · PostgreSQL,
-        Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes, Docker,
-        Terraform, CI/CD, observability · React, Node.js, Ruby on Rails
+      – Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript (Node.js), Java, C#, Ruby, SQL ·
+        PostgreSQL, Redis, Kafka, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure,
+        Kubernetes, Docker, Terraform, CI/CD, observability · React, Ruby on Rails
 
 Education
   • B.Sc. Pure Mathematics (Minor: Business), Florida State University
