@@ -1,28 +1,28 @@
-.PHONY: all pdf txt md clean distclean
+# Every folder under variants/ is a variant (folders named "all" or "clean" are not allowed).
+VARIANTS := $(notdir $(patsubst %/,%,$(wildcard variants/*/)))
+OUT := resume-nicolas-kassis
 
-VARIANTS := Resume Resume-insurance
-AUX_EXT := aux log out fdb_latexmk fls synctex.gz toc
+.PHONY: all clean $(VARIANTS)
+# Keep the PDFs; make would otherwise delete them as intermediates of the .txt rule.
+.SECONDARY: $(foreach v,$(VARIANTS),dist/$(v)/$(OUT).pdf)
 
-all: pdf txt md
+all: $(VARIANTS)
 
-pdf: $(VARIANTS:=.pdf)
+$(VARIANTS): %: dist/%/$(OUT).pdf dist/%/$(OUT).txt dist/%/$(OUT).md
 
-txt: $(VARIANTS:=.txt)
+# Aux files stay in build/<variant>/ so variants never collide.
+dist/%/$(OUT).pdf: variants/%/Resume.tex
+	mkdir -p build/$* dist/$*
+	pdflatex -interaction=nonstopmode -output-directory=build/$* $<
+	pdflatex -interaction=nonstopmode -output-directory=build/$* $<
+	cp build/$*/Resume.pdf $@
 
-md: $(VARIANTS:=.md)
-
-%.pdf: %.tex
-	pdflatex -interaction=nonstopmode $<
-	pdflatex -interaction=nonstopmode $<
-
-%.txt: %.pdf
+dist/%/$(OUT).txt: dist/%/$(OUT).pdf
 	pdftotext -layout $< $@
 
-%.md: %.tex tex2md.py
-	python3 tex2md.py $< $@
+dist/%/$(OUT).md: variants/%/Resume.tex tools/tex2md.py
+	mkdir -p dist/$*
+	python3 tools/tex2md.py $< $@
 
 clean:
-	rm -f $(foreach v,$(VARIANTS),$(addprefix $(v).,$(AUX_EXT)))
-
-distclean: clean
-	rm -f $(foreach v,$(VARIANTS),$(v).pdf $(v).txt $(v).md)
+	rm -rf build dist

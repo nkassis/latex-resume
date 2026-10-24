@@ -2,36 +2,47 @@
 
 LaTeX source, compiled PDF, and plaintext version of my résumé.
 
-- **PDF:** [`Resume.pdf`](Resume.pdf) — also published at <https://nkassis.github.io/latex-resume/Resume.pdf>
-- **Plaintext:** [`Resume.txt`](Resume.txt) — for paste-in application forms
-- **Source:** [`Resume.tex`](Resume.tex)
+- **PDF:** [`dist/general/resume-nicolas-kassis.pdf`](dist/general/resume-nicolas-kassis.pdf) — also published at <https://nkassis.github.io/latex-resume/Resume.pdf>
+- **Plaintext:** [`dist/general/resume-nicolas-kassis.txt`](dist/general/resume-nicolas-kassis.txt) — for paste-in application forms
+- **Source:** [`variants/general/Resume.tex`](variants/general/Resume.tex)
+
+## Layout
+
+```
+variants/<variant>/Resume.tex           # one folder per variant
+tools/tex2md.py                         # .tex -> Markdown converter
+build/<variant>/                        # LaTeX aux files (ignored)
+dist/<variant>/resume-nicolas-kassis.*  # PDF, TXT, MD outputs
+```
 
 ### Variants
 
-| Variant | Source | Outputs |
-| --- | --- | --- |
-| General (canonical) | [`Resume.tex`](Resume.tex) | `Resume.pdf`, `Resume.txt`, `Resume.md` |
-| Insurance-oriented | [`Resume-insurance.tex`](Resume-insurance.tex) | `Resume-insurance.pdf`, `Resume-insurance.txt`, `Resume-insurance.md` |
+| Variant | Source |
+| --- | --- |
+| `general` (canonical) | [`variants/general/Resume.tex`](variants/general/Resume.tex) |
+| `insurance` | [`variants/insurance/Resume.tex`](variants/insurance/Resume.tex) |
 
-Each variant is a standalone copy of `Resume.tex`. Fixes that apply everywhere must be made in every variant. To add a variant, append its basename to `VARIANTS` in the `Makefile` and add a compile step to `.github/workflows/build.yml`.
+Rules:
+
+- Every variant builds to the same neutral filename: `dist/<variant>/resume-nicolas-kassis.{pdf,txt,md}`.
+- Only the `general` variant is published to GitHub Pages, and only its outputs are committed (`dist/general/`). Other variants' outputs are gitignored and available from the CI build artifact.
+- Each variant is a standalone copy of the general `Resume.tex`. A fix that applies everywhere must be made in every variant.
+- To add a variant, create `variants/<name>/Resume.tex`. The Makefile discovers it automatically, and CI builds it via `make`.
 
 ## Build
 
-Requires TeX Live (with `tgpagella`, `hyperref`, `microtype`, `cmap`, `hyphenat`) and `poppler-utils`.
+Requires TeX Live (with `tgpagella`, `hyperref`, `microtype`, `cmap`, `hyphenat`), `poppler-utils`, and Python 3.
 
 ```sh
-make           # builds PDF, TXT, and MD for every variant
-make pdf       # PDFs only
-make txt       # regenerate plaintext from PDFs
-make md        # regenerate Markdown from .tex via tex2md.py
-make Resume-insurance.pdf  # build a single variant
-make clean     # remove LaTeX aux files
-make distclean # also remove generated PDF/TXT/MD files
+make            # build PDF, TXT, and MD for every variant
+make general    # build one variant (any folder name under variants/)
+make insurance
+make clean      # remove build/ and dist/ (including the committed general outputs; rerun make)
 ```
 
 ## CI
 
-`.github/workflows/build.yml` builds every variant's PDF on every push to `master` and publishes it via GitHub Pages so job applications can point at a stable URL that always reflects `master`.
+`.github/workflows/build.yml` runs `make` on every push to `master`. It uploads the whole `dist/` directory as the `resume` build artifact, so you can download any variant. It publishes only the general variant to GitHub Pages: `Resume.pdf` (stable URL), `resume-nicolas-kassis.pdf`, `Resume.txt`, and an `index.html` that redirects to `Resume.pdf`.
 
 ## License
 
