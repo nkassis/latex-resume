@@ -25,6 +25,7 @@ Boston, MA · Apr 2017 – Sep 2026
 
 Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization, managing directors, engineering managers, and principal engineers. Owned the product roadmap, R&D budget, and customer discovery for two enterprise products and acted as the primary product manager.
 
+- Player-coach throughout: mentored engineers from junior through principal, with several promoted into principal and director roles under me, and stayed hands-on with architecture, code review, and prototyping (about a quarter of my time)
 - Led the design and build of Indico Workspaces, an agentic insurance intake solution that autonomously processes underwriting submissions and claims end-to-end
 - Grew Workspaces into the company's fastest-growing product line with 5+ new accounts and $500K new ARR in 8 months
 - Led the transformation of Indico's core Intake product from a legacy ML-based tech stack to a modern generative-AI stack (LLM agents, RAG, evaluation, document intelligence), improving both customer retention and prospect conversion
@@ -36,7 +37,6 @@ Member of the executive team reporting to the CEO. Led a 23-person engineering, 
 - Directed the technical streams of a company-wide response to a major security incident earlier in 2026; Indico received high praise from customers for its transparent and swift response
 - As an early engineer, was one of 4 engineers who re-architected Indico's SaaS API into Indico Intake; personally built core services (authentication, permissioning, model management, dataset and label storage) that set the base application structure
 - Intake grew into an Intelligent Document Processing platform handling billions of documents a year: one real-estate customer processes US title documents at up to 20,000 docs/hour, a logistics customer 15M images/day, and a lender 180,000 loan renewals/month
-- Scaled the backend team as it grew from 4 engineers to the 23-person org later led as VP; established hiring, code-review, release, on-call, and QA practices
 
 ### GMO LLC — Senior Software Engineer
 Boston, MA · Apr 2015 – Apr 2017
