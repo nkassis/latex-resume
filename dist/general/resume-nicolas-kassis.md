@@ -13,7 +13,7 @@ An experienced leader who can scale products and teams from MVP to enterprise sc
 ## Highlights
 
 - Led the design and delivery of Indico Workspaces, an agentic insurance application, that processes underwriting submissions and claims end-to-end. Grew Workspaces into the company's fastest-growing product line with 5+ new accounts and $500K new ARR in 8 months.
-- Migrated Intake, Indico's well-reviewed enterprise Intelligent Document Processing platform, from a discriminative deep-learning stack to a full generative-AI stack (LLM agents, RAG, evaluation).
+- Migrated Intake, Indico's enterprise Intelligent Document Processing platform, from a discriminative deep-learning stack to a full generative-AI stack (LLM agents, RAG, evaluation).
 - Helped to grow and mature Indico's engineering team from 4 people into a well run team of 23, delivering enterprise products to highly demanding customers.
 
 ## Experience
