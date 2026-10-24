@@ -8,7 +8,7 @@ Hanson, MA · (206) 818-1227 · nic.kassis@gmail.com · [linkedin.com/in/nicolas
 
 ## Summary
 
-An experienced leader who can scale products and teams from MVP to enterprise scale production. Most recently served as Vice President of Engineering & Product at Indico Data, reporting to the CEO, where I helped evolve the company's product from a sales demo in 2017 to a widely adopted document processing platform that processes billions of transactions per year. Acquired a solid foundation in engineering best practices through earlier roles at Amazon and GMO trading systems.
+An experienced leader who can scale products and teams from MVP to enterprise scale production. Most recently served as Vice President of Engineering & Product at Indico Data, where I helped evolve the company's product from a sales demo in 2017 to a widely adopted document processing platform that processes billions of transactions per year. Acquired a solid foundation in engineering best practices through earlier roles at Amazon and GMO trading systems.
 
 ## Highlights
 
@@ -24,9 +24,8 @@ Boston, MA · Apr 2017 – Sep 2026
 
 *Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.*
 
-Led a 23-person engineering, DevOps, and product organization. Owned product roadmap, customer discovery, and product developmemt for two enterprise products and acted as the primary product manager.
+Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization, managing directors, engineering managers, and principal engineers. Owned the product roadmap, R&D budget, and customer discovery for two enterprise products and acted as the primary product manager.
 
-- Promoted three times over 9 years, from senior software engineer to backend engineering manager, then senior director of platform engineering, then VP
 - Led the design and build of Indico Workspaces, an agentic insurance intake solution that autonomously processes underwriting submissions and claims end-to-end
 - Grew Workspaces into the company's fastest-growing product line with 5+ new accounts and $500K new ARR in 8 months
 - Led the transformation of Indico's core Intake product from a legacy ML-based tech stack to a modern generative-AI stack (LLM agents, RAG, evaluation, document intelligence), improving both customer retention and prospect conversion
