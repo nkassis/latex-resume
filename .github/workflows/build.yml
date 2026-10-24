@@ -28,23 +28,31 @@ jobs:
           root_file: Resume.tex
           latexmk_use_lualatex: false
 
+      - name: Compile Resume-insurance.pdf
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: Resume-insurance.tex
+          latexmk_use_lualatex: false
+
       - name: Install poppler-utils
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
 
-      - name: Generate Resume.txt
-        run: pdftotext -layout Resume.pdf Resume.txt
+      - name: Generate plaintext
+        run: |
+          pdftotext -layout Resume.pdf Resume.txt
+          pdftotext -layout Resume-insurance.pdf Resume-insurance.txt
 
       - name: Stage site
         run: |
           mkdir -p _site
-          cp Resume.pdf Resume.txt _site/
+          cp Resume.pdf Resume.txt Resume-insurance.pdf Resume-insurance.txt _site/
           cat > _site/index.html <<'HTML'
           <!doctype html>
           <html lang="en">
           <meta charset="utf-8">
           <title>Nicolas Kassis — Résumé</title>
           <meta http-equiv="refresh" content="0; url=Resume.pdf">
-          <p><a href="Resume.pdf">Resume.pdf</a> · <a href="Resume.txt">Resume.txt</a></p>
+          <p><a href="Resume.pdf">Resume.pdf</a> · <a href="Resume.txt">Resume.txt</a> · <a href="Resume-insurance.pdf">Resume-insurance.pdf</a> · <a href="Resume-insurance.txt">Resume-insurance.txt</a></p>
           HTML
 
       - name: Upload PDF+TXT artifact
@@ -54,6 +62,8 @@ jobs:
           path: |
             Resume.pdf
             Resume.txt
+            Resume-insurance.pdf
+            Resume-insurance.txt
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/master'

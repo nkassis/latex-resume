@@ -1,25 +1,28 @@
 .PHONY: all pdf txt md clean distclean
 
+VARIANTS := Resume Resume-insurance
+AUX_EXT := aux log out fdb_latexmk fls synctex.gz toc
+
 all: pdf txt md
 
-pdf: Resume.pdf
+pdf: $(VARIANTS:=.pdf)
 
-Resume.pdf: Resume.tex
-	pdflatex -interaction=nonstopmode Resume.tex
-	pdflatex -interaction=nonstopmode Resume.tex
+txt: $(VARIANTS:=.txt)
 
-txt: Resume.txt
+md: $(VARIANTS:=.md)
 
-Resume.txt: Resume.pdf
-	pdftotext -layout Resume.pdf Resume.txt
+%.pdf: %.tex
+	pdflatex -interaction=nonstopmode $<
+	pdflatex -interaction=nonstopmode $<
 
-md: Resume.md
+%.txt: %.pdf
+	pdftotext -layout $< $@
 
-Resume.md: Resume.tex tex2md.py
-	python3 tex2md.py Resume.tex Resume.md
+%.md: %.tex tex2md.py
+	python3 tex2md.py $< $@
 
 clean:
-	rm -f Resume.aux Resume.log Resume.out Resume.fdb_latexmk Resume.fls Resume.synctex.gz Resume.toc
+	rm -f $(foreach v,$(VARIANTS),$(addprefix $(v).,$(AUX_EXT)))
 
 distclean: clean
-	rm -f Resume.pdf Resume.txt Resume.md
+	rm -f $(foreach v,$(VARIANTS),$(v).pdf $(v).txt $(v).md)
