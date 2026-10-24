@@ -1,0 +1,197 @@
+%Resume-insurance.tex
+\documentclass[10pt,oneside]{article}
+
+% --- Encoding & fonts (ATS-friendly Unicode text extraction) ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cmap}                 % Unicode-safe copy/paste from PDF
+\usepackage{tgpagella}            % Palatino-like body font, clean Unicode
+\usepackage{microtype}
+\usepackage[none]{hyphenat}       % no line-break hyphens (preserves keywords)
+
+\usepackage{geometry}
+
+% --- PDF metadata + hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  pdftitle={Nicolas Kassis - Resume},
+  pdfauthor={Nicolas Kassis},
+  pdfsubject={Engineering Leadership Resume},
+  pdfkeywords={VP Engineering, CTO, Head of Engineering, Platform Engineering, Generative AI, LLM, Agents, Agentic AI, RAG, pgvector, MLOps, SaaS, Enterprise Software, Intelligent Document Processing, InsurTech, Insurance Underwriting, Claims, Product Management, Roadmap, Product Strategy, UX, Product Design, Prototyping, OKRs, Release Planning, Requirements, PRD, Backlog Prioritization, Budgeting, Cost Optimization, Negotiation, Agile, CI/CD, TypeScript, JavaScript, Ruby, Ruby on Rails, FastAPI, SQLAlchemy, Celery, Recruiting, Coaching, OAuth, SAML, GraphQL, Kafka, Debezium, CDC, Change Data Capture, Docker, Kubernetes, K8s, AWS, Terraform, Director of Engineering, Engineering Delivery, Quality Engineering, Reliability, Observability, OpenTelemetry, Specialty Insurance, E\&S, Underwriting Submissions, Human-in-the-Loop}
+}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=0.75in,bmargin=0.75in,lmargin=0.85in,rmargin=0.85in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+
+% --- Contact info ---
+\newcommand{\name}{Nicolas Kassis}
+\newcommand{\location}{Hanson, MA}
+\newcommand{\phone}{(206) 818-1227}
+\newcommand{\email}{nic.kassis@gmail.com}
+\newcommand{\linkedinurl}{linkedin.com/in/nicolas-kassis-2b71a27}
+
+\newcommand{\bigname}[1]{
+  \begin{center}\fontfamily{phv}\selectfont\Huge\bfseries#1\end{center}
+}
+
+% Tagline under contact block
+\newcommand{\headline}[1]{
+  \begin{center}\fontfamily{phv}\selectfont\small\bfseries#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+  \vspace{4pt}
+  {\fontfamily{phv}\selectfont\Large#1}
+  \begin{itemize}
+    \vspace{3pt}
+}{
+  \end{itemize}
+}
+
+% First-level item in a ressection
+\newcommand{\resitem}[1]{
+  \vspace{-4pt}
+\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% Second-level item (bullet in a job)
+\newcommand{\ressubitem}[1]{
+  \vspace{-1pt}
+\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% Italic company-context subtitle inside a job entry (unbulleted)
+\newcommand{\rescontext}[1]{
+  \vspace{-3pt}
+\item[] \begin{flushleft} \textit{\small #1} \end{flushleft}
+}
+
+% Non-bulleted scope paragraph inside a job entry
+\newcommand{\resscope}[1]{
+  \vspace{-3pt}
+\item[] \begin{flushleft} #1 \end{flushleft}
+}
+
+% Job header (company / location-dates / title)
+\newcommand{\resbigitem}[3]{
+  \vspace{-5pt}
+\item
+  \textbf{#1} \hfill #2 \\
+  \textit{#3}
+}
+
+% Job entry environment
+\newenvironment{ressubsec}[3]{
+  \resbigitem{#1}{#2}{#3}
+  \vspace{-2pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+% Simple sublist for skills categories
+\newenvironment{reslist}[1]{
+  \resitem{\textbf{#1}}
+  \vspace{-5pt}
+  \begin{itemize}
+}{
+  \end{itemize}
+}
+
+\begin{document}
+
+% --- Name with horizontal rule ---
+\bigname{\name}
+\vspace{-8pt} \rule{\textwidth}{1pt}
+\vspace{2pt}
+\begin{center}
+  {\small \location{} \; $\cdot$ \; \phone{} \; $\cdot$ \; \href{mailto:\email}{\email} \; $\cdot$ \; \href{https://\linkedinurl}{\linkedinurl}}
+\end{center}
+\headline{VP Engineering \& Product $\cdot$ Enterprise AI/SaaS $\cdot$ InsurTech \& Financial Services}
+\vspace{6pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{4pt}
+{\fontfamily{phv}\selectfont\Large Summary}
+\vspace{3pt}
+
+\begin{flushleft}
+An experienced leader who can scale products and teams from MVP to enterprise scale production. Most recently served as Vice President of Engineering \& Product at Indico Data, where I helped evolve the company's product from a sales demo in 2017 to a widely adopted document processing platform that processes billions of transactions per year. Acquired a solid foundation in engineering best practices through earlier roles at Amazon and GMO trading systems.
+\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Highlights}
+  \ressubitem{Promoted from backend engineer to VP of Engineering \& Product over 9 years at Indico Data.}
+  \ressubitem{Led the design and delivery of Indico Workspaces, an agentic underwriting and claims intake platform with human-in-the-loop review that became the company's fastest-growing product line (5+ new accounts, \$500K new ARR in 8 months).}
+  \ressubitem{Migrated Intake, Indico's well-reviewed enterprise Intelligent Document Processing platform, from a discriminative deep-learning stack to a full generative-AI stack (LLM agents, RAG, evaluation).}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+
+  \begin{ressubsec}{Indico Data}{Boston, MA \; $\cdot$ \; Apr 2017 -- Sep 2026}{Vice President of Engineering \& Product}
+    \rescontext{Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.}
+    \resscope{Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization, managing directors, engineering managers, and principal engineers. Owned the product roadmap, R\&D budget, and customer discovery for two enterprise products and acted as the primary product manager.}
+    \ressubitem{Promoted three times over 9 years, from senior software engineer to backend engineering manager, then senior director of platform engineering, then VP}
+    \ressubitem{Led the design and build of Indico Workspaces, an agentic underwriting and claims intake platform that processes submissions end-to-end with human-in-the-loop review, field-level provenance, and a closed set of agent actions}
+    \ressubitem{Led the transformation of Indico's core Intake product from a legacy ML-based tech stack to a modern generative-AI stack (LLM agents, RAG, evaluation, document intelligence), improving both customer retention and prospect conversion; controlled hallucination with verifier-model citations and enrichment against reference data (for example broker-of-record normalization)}
+    \ressubitem{Built Intake's LLM evaluation tooling: in-platform golden datasets, prompt-version comparison on precision/recall/F1 with span-level matching, and a review loop that grows test sets from accepted or corrected predictions; wrote the first version of the metric calculations}
+    \ressubitem{Drove agentic transformation in engineering (with CTO --- coding/review/log/ticket agents) and product (Claude co-prototyping replaced Figma; requirement/roadmap agents)}
+    \ressubitem{Continuously improved engineering process and introduced a predictable release cadence, CI/CD and test-automation practices, and operational-readiness gates, meeting customer CVE/security SLAs}
+    \ressubitem{Reduced R\&D spend by \$1M+ YoY while growing customers and processing volume, via AWS re-architecture and a hybrid US / LatAm / India delivery model}
+    \ressubitem{Directly managed DevOps for a single-tenant model (one AWS account and Kubernetes cluster per customer, Terraform and Crossplane); ran observability on OpenTelemetry, Prometheus, and SigNoz, including traces of agent execution for prompt debugging}
+    \ressubitem{Directed the technical streams of a company-wide response to a major security incident earlier in 2026; Indico received high praise from customers for its transparent and swift response}
+    \ressubitem{As an early engineer, was one of 4 engineers who re-architected Indico's SaaS API into Indico Intake; personally built core services (authentication, permissioning, model management, dataset and label storage) that set the base application structure}
+    \ressubitem{Intake grew into an Intelligent Document Processing platform handling billions of documents a year: one real-estate customer processes US title documents at up to 20{,}000 docs/hour, a logistics customer 15M images/day, and a lender 180{,}000 loan renewals/month}
+    \ressubitem{Scaled the backend team as it grew from 4 engineers to the 23-person org later led as VP; established hiring, code-review, release, on-call, and QA practices}
+  \end{ressubsec}
+
+  \begin{ressubsec}{GMO LLC}{Boston, MA \; $\cdot$ \; Apr 2015 -- Apr 2017}{Senior Software Engineer}
+    \rescontext{Global investment manager; built trading and portfolio-implementation systems.}
+    \ressubitem{Designed and built RESTful services and APIs for reference data, trade and order management, and holdings retrieval, plus a single-page web application used by portfolio implementers}
+    \ressubitem{Championed and implemented an automated release process, reducing release cycle from 4 weeks to 1 week}
+  \end{ressubsec}
+
+  \begin{ressubsec}{Amazon.com, eCommerce Platform Services}{Seattle, WA \; $\cdot$ \; Jul 2012 -- Mar 2015}{Software Development Engineer}
+    \rescontext{eCommerce Platform Services --- identity, authentication, and authorization platform.}
+    \ressubitem{Developed and maintained the OpenID and OAuth web platform handling identity, authentication, and authorization for all Amazon and mobile applications}
+    \ressubitem{Led a complete redesign of Amazon's authentication web front-end for the retail site on mobile and desktop worldwide}
+  \end{ressubsec}
+
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+  \begin{reslist}{Leadership}
+    \ressubitem{Engineering organization management, org design, recruiting and hiring, coaching and mentorship, managing managers}
+    \ressubitem{R\&D budgeting, cost optimization, vendor and contract negotiations}
+    \ressubitem{Agile delivery, SDLC maturity, QA and test strategy, reliability and on-call, secure development, incident response, executive escalation point for enterprise incidents}
+  \end{reslist}
+  \begin{reslist}{Product}
+    \ressubitem{Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity planning, requirements/PRDs, backlog prioritization}
+    \ressubitem{UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership, technical pre-sales}
+  \end{reslist}
+  \begin{reslist}{AI / ML}
+    \ressubitem{Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence, intelligent document processing (IDP)}
+    \ressubitem{AI-assisted development: coding agents (e.g., Claude Code), agent harnesses, AI design and prototyping tools}
+  \end{reslist}
+  \begin{reslist}{Technical}
+    \ressubitem{Python (FastAPI, SQLAlchemy, Celery, LangChain), TypeScript/JavaScript (Node.js), Java, C\#, Ruby, SQL $\cdot$ PostgreSQL, Redis, Kafka (CDC with Debezium), REST/GraphQL, OAuth 2.0/OIDC/SAML $\cdot$ AWS, GCP, Azure, Kubernetes (K8s), Docker, Terraform, Crossplane, CI/CD, observability (OpenTelemetry, Prometheus, SigNoz) $\cdot$ React, Ruby on Rails}
+  \end{reslist}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Education}
+  \ressubitem{B.Sc. Pure Mathematics (Minor: Business), Florida State University}
+\end{ressection}
+
+\end{document}
