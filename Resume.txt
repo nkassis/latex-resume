@@ -8,9 +8,7 @@ served as Vice President of Engineering & Product at Indico Data, where I helped
 from a sales demo in 2017 to a widely adopted document processing platform that processes billions of
 transactions per year. Acquired a solid foundation in engineering best practices through earlier roles at Amazon
 and GMO trading systems.
-
 Highlights
-   • Promoted from backend engineer to VP of Engineering & Product over 9 years at Indico Data.
    • Led the design and delivery of Indico Workspaces, an agentic insurance application, that processes
      underwriting submissions and claims end-to-end. Grew Workspaces into the company’s fastest-growing
      product line with 5+ new accounts and $500K new ARR in 8 months.
@@ -46,10 +44,10 @@ Experience
           represented the company at multiple events including ITC Vegas and InsurTech Insights NY/London
         – Directed the technical streams of a company-wide response to a major security incident earlier in 2026;
           Indico received high praise from customers for its transparent and swift response
-         – As an early engineer, was one of 4 engineers who re-architected Indico’s SaaS API into Indico Intake;
-           personally built core services (authentication, permissioning, model management, dataset and label
-           storage) that set the base application structure
-         – Intake grew into an Intelligent Document Processing platform handling billions of documents a year:
+        – As an early engineer, was one of 4 engineers who re-architected Indico’s SaaS API into Indico Intake;
+          personally built core services (authentication, permissioning, model management, dataset and label
+          storage) that set the base application structure
+         – Intake grew into an Intelligent Document Processing platform handling billions of documents a year:
            one real-estate customer processes US title documents at up to 20,000 docs/hour, a logistics customer
            15M images/day, and a lender 180,000 loan renewals/month
          – Scaled the backend team as it grew from 4 engineers to the 23-person org later led as VP; established
@@ -75,25 +73,28 @@ Experience
 
 Skills
   • Leadership
-      – Engineering organization management, org design, recruiting and hiring, coaching and mentorship,
-        managing managers
-      – R&D budgeting, cost optimization, vendor and contract negotiations
-      – Agile delivery, SDLC maturity, secure development, incident response, executive escalation point for
-        enterprise incidents
+         – Engineering organization management, org design, recruiting and hiring, coaching and mentorship,
+           managing managers
+         – R&D budgeting, cost optimization, vendor and contract negotiations
+         – Agile delivery, SDLC maturity, secure development, incident response, executive escalation point for
+           enterprise incidents
+
   • Product
-      – Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity
-        planning, requirements/PRDs, backlog prioritization
-      – UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership,
-        technical pre-sales
+         – Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity
+           planning, requirements/PRDs, backlog prioritization
+         – UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership,
+           technical pre-sales
+
   • AI / ML
-      – Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence,
-         intelligent document processing (IDP)
-      – AI-assisted development: coding agents (e.g., Claude Code), agent harnesses, AI design and
-         prototyping tools
+         – Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence,
+           intelligent document processing (IDP)
+         – AI-assisted development: coding agents (e.g., Claude Code), agent harnesses, AI design and
+           prototyping tools
+
   • Technical
-      – Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript (Node.js), Java, C#, Ruby, SQL ·
-        PostgreSQL, Redis, Kafka (CDC with Debezium), REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS,
-        GCP, Azure, Kubernetes (K8s), Docker, Terraform, CI/CD, observability · React, Ruby on Rails
+         – Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript (Node.js), Java, C#, Ruby, SQL ·
+           PostgreSQL, Redis, Kafka (CDC with Debezium), REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS,
+           GCP, Azure, Kubernetes (K8s), Docker, Terraform, CI/CD, observability · React, Ruby on Rails
 
 Education
   • B.Sc. Pure Mathematics (Minor: Business), Florida State University
