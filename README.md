@@ -37,8 +37,14 @@ Requires TeX Live (with `tgpagella`, `hyperref`, `microtype`, `cmap`, `hyphenat`
 make            # build PDF, TXT, and MD for every variant
 make general    # build one variant (any folder name under variants/)
 make insurance
-make clean      # remove build/ and dist/ (including the committed general outputs; rerun make)
+make private    # same files for every variant, with the phone number, in private/ (gitignored)
+make private-insurance   # one variant
+make clean      # remove build/, dist/ and private/ (including the committed general outputs; rerun make)
 ```
+
+### Phone number
+
+The phone number is never committed. Copy `.env.example` to `.env` (gitignored) and set `RESUME_PHONE`; `make private` builds `private/<variant>/resume-nicolas-kassis.{pdf,txt,md}` with the number for application uploads. Everything else, including `dist/`, the committed outputs and the GitHub Pages copy, leaves it out.
 
 ## CI
 
