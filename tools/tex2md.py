@@ -9,6 +9,7 @@ dispatch tables below.
 """
 from __future__ import annotations
 
+import os
 import re
 import sys
 from pathlib import Path
@@ -170,15 +171,21 @@ def clean(s: str) -> str:
 
 def convert(src: str) -> str:
     macros: dict[str, str] = {}
-    for m in re.finditer(r"\\newcommand\{\\(\w+)\}\{([^{}]*)\}", src):
+    for m in re.finditer(r"\\(?:newcommand|providecommand)\{\\(\w+)\}\{([^{}]*)\}", src):
         macros[m.group(1)] = m.group(2)
+
+    # Phone number is never in the source; it comes from the environment
+    # (RESUME_PHONE, set by `make private`) or the contact line omits it.
+    phone = os.environ.get("RESUME_PHONE", "").strip().strip('"')
+    macros["phone"] = phone
+    macros["phoneblock"] = f"{phone} \\; $\\cdot$ \\; " if phone else ""
 
     db = re.search(r"\\begin\{document\}", src)
     de = re.search(r"\\end\{document\}", src)
     body = src[db.end():de.start()]
 
     for name, val in macros.items():
-        body = re.sub(r"\\" + re.escape(name) + r"(?:\{\})?(?!\w)", val, body)
+        body = re.sub(r"\\" + re.escape(name) + r"(?:\{\})?(?!\w)", lambda _m, v=val: v, body)
 
     out: list[str] = []
     pos = 0

@@ -1,6 +1,6 @@
 # Nicolas Kassis
 
-Hanson, MA · (206) 818-1227 · nic.kassis@gmail.com · [linkedin.com/in/nicolas-kassis-2b71a27](https://linkedin.com/in/nicolas-kassis-2b71a27)
+Hanson, MA · nic.kassis@gmail.com · [linkedin.com/in/nicolas-kassis-2b71a27](https://linkedin.com/in/nicolas-kassis-2b71a27)
 
 **VP Engineering & Product · Enterprise AI/SaaS · InsurTech & Financial Services**
 

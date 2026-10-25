@@ -10,3 +10,5 @@
 build/
 dist/*
 !dist/general/
+.env
+private/

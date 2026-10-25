@@ -34,9 +34,14 @@
 % --- Contact info ---
 \newcommand{\name}{Nicolas Kassis}
 \newcommand{\location}{Hanson, MA}
-\newcommand{\phone}{(206) 818-1227}
 \newcommand{\email}{nic.kassis@gmail.com}
 \newcommand{\linkedinurl}{linkedin.com/in/nicolas-kassis-2b71a27}
+
+% Phone number is never in this repo. The private build passes it in from
+% .env (see Makefile: make private); every other build leaves it empty and
+% the contact line drops the phone segment.
+\providecommand*{\phone}{}
+\newcommand{\phoneblock}{\ifx\phone\empty\else\phone{} \; $\cdot$ \; \fi}
 
 \newcommand{\bigname}[1]{
   \begin{center}\fontfamily{phv}\selectfont\Huge\bfseries#1\end{center}
@@ -114,7 +119,7 @@
 \vspace{-8pt} \rule{\textwidth}{1pt}
 \vspace{2pt}
 \begin{center}
-  {\small \location{} \; $\cdot$ \; \phone{} \; $\cdot$ \; \href{mailto:\email}{\email} \; $\cdot$ \; \href{https://\linkedinurl}{\linkedinurl}}
+  {\small \location{} \; $\cdot$ \; \phoneblock\href{mailto:\email}{\email} \; $\cdot$ \; \href{https://\linkedinurl}{\linkedinurl}}
 \end{center}
 \headline{VP Engineering \& Product $\cdot$ Enterprise AI/SaaS $\cdot$ InsurTech \& Financial Services}
 \vspace{6pt}
