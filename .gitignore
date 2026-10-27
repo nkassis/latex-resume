@@ -7,3 +7,8 @@
 *.synctex.gz
 *.toc
 *~
+build/
+dist/*
+!dist/general/
+.env
+private/

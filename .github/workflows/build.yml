@@ -22,38 +22,39 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Compile Resume.pdf
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: Resume.tex
-          latexmk_use_lualatex: false
+      - name: Install TeX Live and poppler-utils
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended tex-gyre poppler-utils
 
-      - name: Install poppler-utils
-        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      # clean first: checkout gives committed dist/general/ fresh mtimes,
+      # so make would otherwise treat it as up to date.
+      - name: Build all variants
+        run: make clean && make
 
-      - name: Generate Resume.txt
-        run: pdftotext -layout Resume.pdf Resume.txt
-
+      # Only the general variant is published; tailored variants stay in the build artifact.
       - name: Stage site
         run: |
           mkdir -p _site
-          cp Resume.pdf Resume.txt _site/
+          cp dist/general/resume-nicolas-kassis.pdf _site/Resume.pdf
+          cp dist/general/resume-nicolas-kassis.pdf _site/resume-nicolas-kassis.pdf
+          cp dist/general/resume-nicolas-kassis.txt _site/Resume.txt
           cat > _site/index.html <<'HTML'
           <!doctype html>
           <html lang="en">
           <meta charset="utf-8">
           <title>Nicolas Kassis — Résumé</title>
           <meta http-equiv="refresh" content="0; url=Resume.pdf">
-          <p><a href="Resume.pdf">Resume.pdf</a> · <a href="Resume.txt">Resume.txt</a></p>
+          <p><a href="Resume.pdf">Resume.pdf</a> · <a href="resume-nicolas-kassis.pdf">resume-nicolas-kassis.pdf</a> · <a href="Resume.txt">Resume.txt</a></p>
           HTML
 
-      - name: Upload PDF+TXT artifact
+      - name: Upload build artifact (all variants)
         uses: actions/upload-artifact@v4
         with:
           name: resume
-          path: |
-            Resume.pdf
-            Resume.txt
+          path: dist/
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/master'
