@@ -9,7 +9,7 @@ Notes for coding agents working in this repo.
 - Every variant must stay at 2 pages with no Overfull/Underfull hbox warnings.
 
 ## Layout and variants
-- `variants/<variant>/Resume.tex`: one folder per variant. `general` is canonical; `insurance` is the insurance-oriented variant.
+- `variants/<variant>/Resume.tex`: one folder per variant. `general` is canonical; `insurance` is the insurance-oriented variant. `fintech` is the financial-services and banking oriented variant.
 - Each variant is a standalone copy. Edits that apply to "every variant" must be made in each `variants/*/Resume.tex`.
 - The Makefile discovers variants from the folders under `variants/`. Do not hardcode a list, and do not name a variant `all`, `clean` or `private`.
 - Every variant outputs `dist/<variant>/resume-nicolas-kassis.{pdf,txt,md}`. Aux files go to `build/<variant>/`.
