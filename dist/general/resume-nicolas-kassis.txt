@@ -1,23 +1,21 @@
                                        Nicolas Kassis
-                  Hanson, MA · nic.kassis@gmail.com · linkedin.com/in/nicolas-kassis-2b71a27
-                 VP Engineering & Product · Enterprise AI/SaaS · InsurTech & Financial Services
+                 Hanson, MA · nic.kassis@gmail.com · linkedin.com/in/nicolas-kassis-2b71a27
+           VP Engineering & Product · AI-Native Enterprise Platforms · Financial Services & InsurTech
 
 Summary
-An experienced leader who can scale products and teams from MVP to enterprise scale production. Most recently
-served as Vice President of Engineering & Product at Indico Data, where I helped evolve the company’s product
-from a sales demo in 2017 to a widely adopted document processing platform that processes billions of
-transactions per year. Acquired a solid foundation in engineering best practices through earlier roles at Amazon
-and GMO trading systems.
+Engineering and product executive who scales products and teams from MVP to enterprise production. Most
+recently served as Vice President of Engineering & Product at Indico Data, where I helped evolve the company’s
+product from a sales demo in 2017 to a widely adopted document processing platform that processes billions of
+transactions per year. Earlier built financial and identity platforms at GMO (order, trade, and reconciliation
+systems for a global asset manager) and Amazon (identity, OAuth, and authorization platform).
 
 Highlights
-   • Grew Indico’s engineering organization from 4 to 23 across development, DevOps, QA, and product,
-     managing directors and engineering managers, while cutting R&D spend by $1M+ year over year as
-     customers and processing volume grew.
-   • Led the design and delivery of Indico Workspaces, an agentic insurance application, that processes
-     underwriting submissions and claims end-to-end. Grew Workspaces into the company’s fastest-growing
-     product line with 5+ new accounts and $500K new ARR in 8 months.
-   • Migrated Intake, Indico’s enterprise Intelligent Document Processing platform, from a discriminative
-     deep-learning stack to a full generative-AI stack (LLM agents, RAG, evaluation).
+   • Grew Indico’s engineering organization from 4 to 23 across development, DevOps, QA, and product while
+     cutting R&D spend by $1M+ year over year.
+   • Designed and delivered Indico Workspaces, an agentic platform that processes underwriting submissions
+     and claims with human-in-the-loop review; 5+ new accounts and $500K new ARR in 8 months.
+   • Moved Intake, Indico’s document-AI platform, from discriminative deep learning to LLM agents, RAG, and
+     LLM-based evaluation without breaking customer accuracy, isolation, or uptime commitments.
 
 Experience
    • Indico Data                                                                     Boston, MA · Apr 2017 – Sep 2026
@@ -27,46 +25,47 @@ Experience
           product organization, managing directors, engineering managers, and principal engineers. Owned the
           product roadmap, R&D budget, and customer discovery for two enterprise products and acted as the
           primary product manager.
-        – Player-coach throughout: mentored engineers from junior through principal, with several promoted
-          into principal and director roles under me, and stayed hands-on with architecture, code review, and
-          prototyping (about a quarter of my time)
-        – Led the design and build of Indico Workspaces, an agentic insurance intake solution that
-          autonomously processes underwriting submissions and claims end-to-end
-        – Grew Workspaces into the company’s fastest-growing product line with 5+ new accounts and $500K
-          new ARR in 8 months
-        – Led the transformation of Indico’s core Intake product from a legacy ML-based tech stack to a modern
-          generative-AI stack (LLM agents, RAG, evaluation, document intelligence), improving both customer
-          retention and prospect conversion
-        – Drove agentic transformation in engineering (with CTO — coding/review/log/ticket agents) and
-          product (Claude co-prototyping replaced Figma; requirement/roadmap agents)
-        – Continuously improved engineering process and introduced a fixed 6-week release cadence to improve
-          release predictability and hit customer CVE/security SLAs
+        – Promoted three times over 9 years, from senior software engineer to backend engineering manager,
+          then senior director of platform engineering, then VP
+        – Player-coach: mentored engineers from junior to principal, promoted several into principal and
+          director roles, and stayed hands-on in architecture, code review, and prototyping
+        – Designed, architected, and managed the development of Workspaces, an agentic application built for
+          the highly regulated insurance industry, with human-in-the-loop review and auditable agent actions
+        – Led Intake’s move from a legacy ML stack to generative AI, including LLM agents, RAG, and
+          evaluation, improving customer retention and prospect conversion
+        – Drove AI-assisted development with the CTO: coding agents for every engineer, plus agents in code
+          review, bug analysis, PR generation, and security scans behind existing release gates
+        – Replaced design mockups with coding-agent prototypes in product discovery
+        – Set a predictable release train, CI/CD and test automation, and operational-readiness gates; met
+          customer CVE and security SLAs across cloud and on-prem
         – Reduced R&D spend by $1M+ YoY while growing customers and processing volume, via AWS
           re-architecture and a hybrid US / LatAm / India delivery model
-        – Partnered with Sales and Customer Success on multiple upsell and expansion opportunities; largest
-          was a $500K, 12-month full extended-release-support contract with a top account
+        – Partnered with Sales and CS on upsells and expansions, including a $500K extended-support contract
+          with a top account
         – Worked closely with Marketing to inject customer and market feedback into product positioning;
           represented the company at multiple events including ITC Vegas and InsurTech Insights NY/London
-         – Directed the technical streams of a company-wide response to a major security incident earlier in 2026;
-           Indico received high praise from customers for its transparent and swift response
-         – As an early engineer, was one of 4 engineers who re-architected Indico’s SaaS API into Indico Intake;
-           personally built core services (authentication, permissioning, model management, dataset and label
-           storage) that set the base application structure
-         – Intake grew into an Intelligent Document Processing platform handling billions of documents a year:
-           one real-estate customer processes US title documents at up to 20,000 docs/hour, a logistics customer
-           15M images/day, and a lender 180,000 loan renewals/month
+        – Led a 2026 audit of infrastructure, developer and deployment tooling, and customer-isolation controls
+        – Directed the technical response to a security incident; customers praised the speed and transparency
+         – Managed DevOps for single-tenant delivery, one AWS account and Kubernetes cluster per customer
+           via Terraform and Crossplane, plus a self-hosted on-prem build
+         – Built observability on OpenTelemetry, Prometheus, and SigNoz, including agent-execution traces
+         – One of 4 engineers who re-architected Indico’s SaaS API into Intake; built its authentication,
+           permissioning, model-management, and dataset services
+         – Scaled Intake to billions of documents a year: a real-estate customer at 20,000 title docs/hour, a
+           logistics customer at 15M images/day, and a lender at 180,000 loan renewals/month
   • GMO LLC                                                                            Boston, MA · Apr 2015 – Apr 2017
     Senior Software Engineer
            Global investment manager; built trading and portfolio-implementation systems.
          – Designed and built RESTful services and APIs for reference data, trade and order management, and
            holdings retrieval, plus a single-page web application used by portfolio implementers
-         – Championed and implemented an automated release process, reducing release cycle from 4 weeks to 1
-           week
+         – Built the reconciliation service matching daily orders to executed trades, surfacing exceptions and
+           exposure to portfolio managers
+         – Championed and implemented an automated release process that replaced manual releases
          – Built reusable cross-cutting components and a shared web-component library to reduce effort for new
            microservices and data-rich internal applications
-  • Amazon.com, eCommerce Platform Services                                             Seattle, WA · Jul 2012 – Mar 2015
+  • Amazon.com, eCommerce Platform Services                                              Seattle, WA · Jul 2012 – Mar 2015
     Software Development Engineer
-           eCommerce Platform Services — identity, authentication, and authorization platform.
+           eCommerce Platform Services: identity, authentication, and authorization platform.
          – Developed and maintained the OpenID and OAuth web platform handling identity, authentication,
            and authorization for all Amazon and mobile applications
          – Led a complete redesign of Amazon’s authentication web front-end for the retail site on mobile and
@@ -79,13 +78,13 @@ Skills
       – Engineering organization management, org design, recruiting and hiring, coaching and mentorship,
         managing managers
       – R&D budgeting, cost optimization, vendor and contract negotiations
-      – Agile delivery, SDLC maturity, secure development, incident response, executive escalation point for
-        enterprise incidents
+      – Agile delivery, SDLC maturity, QA and test strategy, reliability and on-call, secure development,
+        security audits, incident response, executive escalation for enterprise incidents
   • Product
       – Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity
         planning, requirements/PRDs, backlog prioritization
       – UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership,
-        technical pre-sales
+        technical pre-sales, developer experience and API platform design
   • AI / ML
       – Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence,
          intelligent document processing (IDP)
