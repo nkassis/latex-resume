@@ -22,6 +22,7 @@ dist/<variant>/resume-nicolas-kassis.*  # PDF, TXT, MD outputs
 | `general` (canonical) | [`variants/general/Resume.tex`](variants/general/Resume.tex) |
 | `insurance` | [`variants/insurance/Resume.tex`](variants/insurance/Resume.tex) |
 | `platform` | [`variants/platform/Resume.tex`](variants/platform/Resume.tex) |
+| `fintech` | [`variants/fintech/Resume.tex`](variants/fintech/Resume.tex) |
 
 Rules:
 
