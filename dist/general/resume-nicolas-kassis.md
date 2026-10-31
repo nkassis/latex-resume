@@ -23,11 +23,12 @@ Boston, MA · Apr 2017 – Sep 2026
 
 *Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.*
 
-Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization; managed engineers directly from 2019, later directors, engineering managers, and principal engineers. Owned the product roadmap, R&D budget, and customer discovery for two enterprise products and acted as the primary product manager.
+Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization; managed engineers directly from 2019, later directors, engineering managers, and principal engineers. Owned the product roadmap, R&D budget, scoping and estimation, and customer discovery for two enterprise products and acted as the primary product manager.
 
 - Promoted three times over 9 years, from senior software engineer to backend engineering manager, then senior director of platform engineering, then VP
 - Player-coach: mentored engineers from junior to principal, promoted several into principal and director roles, and kept roughly a quarter of my time hands-on in architecture, code review, prototypes, and production fixes
 - Designed and architected Workspaces, an agentic platform for regulated insurance workflows: natural-language guidelines compiled into deterministic rule checks, every agent action attributed and every field value carrying document or agent provenance, with human-in-the-loop review
+- Designed the architecture making Workspaces the single entry point for submissions, document uploads, and email integrations, consolidating two products' intake paths
 - Led Intake's move from a legacy ML stack to generative AI: LLM agents, RAG, verifier models grounded in document citations, and enrichment against reference data to curb hallucination; improved customer retention and prospect conversion
 - Built Intake's LLM evaluation loop: golden datasets annotated in-platform, prompt-version comparison on precision, recall, and F1 with span-level matching, and a review flow where accepted or corrected predictions grew the test set; wrote the first version of the metrics
 - Drove AI-assisted development with the CTO: coding agents (Claude Code, Codex, Cursor, Devin) for every engineer, plus agents in code review, bug analysis, PR generation, and security scans behind existing release gates; replaced design mockups with coding-agent prototypes in product discovery
@@ -54,12 +55,7 @@ Seattle, WA · Jul 2012 – Mar 2015
 
 - Developed and maintained the OpenID and OAuth web platform handling identity, authentication, and authorization for all Amazon and mobile applications
 - Led a complete redesign of Amazon's authentication web front-end for the retail site on mobile and desktop worldwide
-
-### McGill University, Montreal Neurological Institute — Software Developer
-Montreal, QC · Jan 2010 – Jun 2012
-
-- Built BrainBrowser, an open-source, browser-based 3D brain surface and volume viewer used by neuroscience researchers to explore imaging data
-- Worked on CBRAIN, a platform for managing scientific computing workloads on HPC clusters
+- Built the Login with Amazon developer console used by thousands of external developers to register and manage apps on Amazon APIs
 
 ## Skills
 
