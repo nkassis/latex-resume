@@ -59,6 +59,7 @@ Seattle, WA · Jul 2012 – Mar 2015
 Montreal, QC · Jan 2010 – Jun 2012
 
 - Built BrainBrowser, an open-source, browser-based 3D brain surface and volume viewer used by neuroscience researchers to explore imaging data
+- Worked on CBRAIN, a platform for managing scientific computing workloads on HPC clusters
 
 ## Skills
 
