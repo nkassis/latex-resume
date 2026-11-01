@@ -22,8 +22,8 @@ Experience
           Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.
           Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and
           product organization; managed engineers directly from 2019, later directors, engineering managers,
-          and principal engineers. Owned the product roadmap, R&D budget, and customer discovery for two
-          enterprise products and acted as the primary product manager.
+          and principal engineers. Owned the product roadmap, R&D budget, scoping and estimation, and
+          customer discovery for two enterprise products and acted as the primary product manager.
         – Promoted three times over 9 years, from senior software engineer to backend engineering manager,
           then senior director of platform engineering, then VP
         – Player-coach: mentored engineers from junior to principal, promoted several into principal and
@@ -32,6 +32,8 @@ Experience
         – Designed and architected Workspaces, an agentic platform for regulated insurance workflows:
           natural-language guidelines compiled into deterministic rule checks, every agent action attributed and
           every field value carrying document or agent provenance, with human-in-the-loop review
+        – Designed the architecture making Workspaces the single entry point for submissions, document
+          uploads, and email integrations, consolidating two products’ intake paths
         – Led Intake’s move from a legacy ML stack to generative AI: LLM agents, RAG, verifier models
           grounded in document citations, and enrichment against reference data to curb hallucination;
           improved customer retention and prospect conversion
@@ -45,9 +47,9 @@ Experience
           customer CVE and security SLAs across cloud and on-prem
         – Reduced R&D spend by $1M+ YoY while growing customers and processing volume, via AWS
           re-architecture and a hybrid US / LatAm / India delivery model
-        – Partnered with Sales and CS on expansions, including a $500K extended-support renewal with a top
-          account
-         – Led a 2026 audit of infrastructure, developer and deployment tooling, and customer-isolation controls
+         – Partnered with Sales and CS on expansions, including a $500K extended-support renewal with a top
+           account
+         – Led a 2026 audit of infrastructure, developer and deployment tooling, and customer-isolation controls
          – Directed the technical response to a security incident; customers praised the speed and transparency
          – Managed DevOps directly for single-tenant delivery, one AWS account and Kubernetes cluster per
            customer via Terraform and Crossplane, plus a self-hosted on-prem build
@@ -69,11 +71,8 @@ Experience
            and authorization for all Amazon and mobile applications
          – Led a complete redesign of Amazon’s authentication web front-end for the retail site on mobile and
            desktop worldwide
-  • McGill University, Montreal Neurological Institute                                Montreal, QC · Jan 2010 – Jun 2012
-    Software Developer
-         – Built BrainBrowser, an open-source, browser-based 3D brain surface and volume viewer used by
-           neuroscience researchers to explore imaging data
-         – Worked on CBRAIN, a platform for managing scientific computing workloads on HPC clusters
+         – Built the Login with Amazon developer console used by thousands of external developers to register
+           and manage apps on Amazon APIs
 
 Skills
   • Leadership
