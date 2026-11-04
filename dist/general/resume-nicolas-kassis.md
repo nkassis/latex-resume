@@ -8,7 +8,7 @@ Hanson, MA · nic.kassis@gmail.com · [linkedin.com/in/nicolas-kassis-2b71a27](h
 
 ## Summary
 
-Engineering and product executive who scales products and teams from MVP to enterprise production. Most recently served as Vice President of Engineering & Product at Indico Data, where I helped evolve the company's product from a sales demo in 2017 to a widely adopted document processing platform that processes billions of transactions per year. Earlier built financial and identity platforms at GMO (order, trade, and reconciliation systems for a global asset manager) and Amazon (identity, OAuth, and authorization platform).
+Engineering and product executive who scales products and teams from MVP to enterprise production. Most recently served as Vice President of Engineering & Product at Indico Data, where I helped evolve the company's product from a sales demo in 2017 to a widely adopted AI platform for document intake and agentic workflows processing billions of transactions a year. Earlier built financial and identity platforms at GMO (order, trade, and reconciliation systems for a global asset manager) and Amazon (identity, OAuth, and authorization platform).
 
 ## Highlights
 
@@ -21,9 +21,9 @@ Engineering and product executive who scales products and teams from MVP to ente
 ### Indico Data — Vice President of Engineering & Product
 Boston, MA · Apr 2017 – Sep 2026
 
-*Enterprise AI SaaS + on-prem IDP for insurance underwriting/claims and financial services.*
+*Document intake and agentic underwriting platform for insurance and financial services.*
 
-Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization; managed engineers directly from 2019, later directors, engineering managers, and principal engineers. Owned the product roadmap, R&D budget, scoping and estimation, and customer discovery for two enterprise products and acted as the primary product manager.
+Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization; managed engineers directly from 2019, later directors, engineering managers, and principal engineers. Owned the product roadmap, scoping and estimation, and customer discovery for two enterprise products and acted as the primary product manager.
 
 - Promoted three times over 9 years, from senior software engineer to backend engineering manager, then senior director of platform engineering, then VP
 - Player-coach: mentored engineers from junior to principal, promoted several into principal and director roles, and kept roughly a quarter of my time hands-on in architecture, code review, prototypes, and production fixes
@@ -35,8 +35,7 @@ Member of the executive team reporting to the CEO. Led a 23-person engineering, 
 - Set a predictable release train, CI/CD and test automation, and operational-readiness gates; met customer CVE and security SLAs across cloud and on-prem
 - Reduced R&D spend by $1M+ YoY while growing customers and processing volume, via AWS re-architecture and a hybrid US / LatAm / India delivery model
 - Partnered with Sales and CS on expansions, including a $500K extended-support renewal with a top account
-- Led a 2026 audit of infrastructure, developer and deployment tooling, and customer-isolation controls
-- Directed the technical response to a security incident; customers praised the speed and transparency
+- Led a company-wide security audit and rebuild of infrastructure, developer tooling, deployment systems and customer isolation in 2026
 - Managed DevOps directly for single-tenant delivery, one AWS account and Kubernetes cluster per customer via Terraform and Crossplane, plus a self-hosted on-prem build
 - Built observability on OpenTelemetry, Prometheus, and SigNoz, including agent-execution traces
 - One of 4 engineers who re-architected Indico's SaaS API into Intake; built its authentication, permissioning, model-management, and dataset services
