@@ -23,22 +23,20 @@ Boston, MA · Apr 2017 – Sep 2026
 
 *Document intake and agentic underwriting platform for insurance and financial services.*
 
-Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization; managed engineers directly from 2019, later directors, engineering managers, and principal engineers. Owned the product roadmap, scoping and estimation, and customer discovery for two enterprise products and acted as the primary product manager.
+Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization, managing engineers directly from 2019. Owned the product roadmap, scoping and estimation, and customer discovery for two enterprise products and acted as the primary product manager.
 
-- Promoted three times over 9 years, from senior software engineer to backend engineering manager, then senior director of platform engineering, then VP
-- Player-coach: mentored engineers from junior to principal, promoted several into principal and director roles, and kept roughly a quarter of my time hands-on in architecture, code review, prototypes, and production fixes
-- Designed and architected Workspaces, an agentic platform for regulated insurance workflows: natural-language guidelines compiled into deterministic rule checks, every agent action attributed and every field value carrying document or agent provenance, with human-in-the-loop review
-- Designed the architecture making Workspaces the single entry point for submissions, document uploads, and email integrations, consolidating two products' intake paths
-- Led Intake's move from a legacy ML stack to generative AI: LLM agents, RAG, verifier models grounded in document citations, and enrichment against reference data to curb hallucination; improved customer retention and prospect conversion
-- Built Intake's LLM evaluation loop: golden datasets annotated in-platform, prompt-version comparison on precision, recall, and F1 with span-level matching, and a review flow where accepted or corrected predictions grew the test set; wrote the first version of the metrics
-- Drove AI-assisted development with the CTO: coding agents (Claude Code, Codex, Cursor, Devin) for every engineer, plus agents in code review, bug analysis, PR generation, and security scans behind existing release gates; replaced design mockups with coding-agent prototypes in product discovery
-- Set a predictable release train, CI/CD and test automation, and operational-readiness gates; met customer CVE and security SLAs across cloud and on-prem
-- Reduced R&D spend by $1M+ YoY while growing customers and processing volume, via AWS re-architecture and a hybrid US / LatAm / India delivery model
-- Partnered with Sales and CS on expansions, including a $500K extended-support renewal with a top account
-- Led a company-wide security audit and rebuild of infrastructure, developer tooling, deployment systems and customer isolation in 2026
-- Managed DevOps directly for single-tenant delivery, one AWS account and Kubernetes cluster per customer via Terraform and Crossplane, plus a self-hosted on-prem build
-- Built observability on OpenTelemetry, Prometheus, and SigNoz, including agent-execution traces
-- One of 4 engineers who re-architected Indico's SaaS API into Intake; built its authentication, permissioning, model-management, and dataset services
+- Promoted three times over 9 years, from senior software engineer to VP
+- Player-coach: mentored engineers from junior to principal, promoted several to principal and director, and kept about a quarter of my time hands-on in architecture, code review, and prototypes
+- Architected Workspaces: typed fields with document and agent provenance, human-in-the-loop review, and a closed set of agent actions applied by code, doubling as the prompt-injection defense
+- Led Intake's move from legacy ML to generative AI, with verifier models grounded in citations and reference-data enrichment to curb hallucination; improved retention and conversion
+- Built Intake's LLM evaluation loop and its first metrics: in-platform golden datasets, prompt-version comparison on precision, recall, and F1, and reviewed predictions growing the test set
+- Drove AI-assisted development with the CTO: coding agents (Claude Code, Codex, Cursor, Devin) for every engineer, plus agents in code review, bug analysis, and security scans behind release gates
+- Set a predictable release train and operational-readiness gates; met customer CVE and security SLAs
+- Cut R&D spend by $1M+ YoY via AWS re-architecture and a hybrid US / LatAm / India model
+- Led a company-wide 2026 security audit and rebuild of infrastructure, tooling, and customer isolation
+- Managed DevOps for single-tenant delivery (AWS account and K8s cluster per customer, Terraform, Crossplane) and self-hosted on-prem; observability on OpenTelemetry, Prometheus, and SigNoz
+- One of 4 engineers who re-architected the SaaS API into Intake; built auth, model, dataset services
+- Built the platform's early ML tooling: dataset management in Pandas, baseline classifiers in scikit-learn, and NumPy-based model weight export and serialization for serving, before the move to the generative stack
 - Scaled Intake to billions of documents a year: a real-estate customer at 20,000 title docs/hour, a logistics customer at 15M images/day, and a lender at 180,000 loan renewals/month
 
 ### GMO LLC — Senior Software Engineer
@@ -61,19 +59,21 @@ Seattle, WA · Jul 2012 – Mar 2015
 **Leadership**
 - Engineering organization management, org design, recruiting and hiring, coaching and mentorship, managing managers
 - R&D budgeting, cost optimization, vendor and contract negotiations
-- Agile delivery, SDLC maturity, QA and test strategy, reliability and on-call, secure development, security audits, incident response, executive escalation for enterprise incidents
+- Agile delivery, SDLC maturity, QA and test strategy, reliability and on-call, secure development, security audits, incident response, AI governance and responsible-AI practices in regulated industries, executive escalation for enterprise incidents
 
 **Product**
 - Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity planning, requirements/PRDs, backlog prioritization
 - UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership, technical pre-sales, developer experience and API platform design
 
 **AI / ML**
-- Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence, intelligent document processing (IDP)
+- Generative AI: LLM agents and agentic orchestration, MCP servers and tool integrations, RAG, embeddings and vector search, prompt engineering, LLM-based evaluation and golden datasets, guardrails, LLM observability and agent tracing, document intelligence / IDP
+- Classical ML: dataset management, baseline classifiers and evaluation (scikit-learn, Pandas, NumPy), model serialization for serving
 
 **Technical**
-- Python (FastAPI, SQLAlchemy, Celery), TypeScript/JavaScript (Node.js), Java, C#, Ruby, SQL · PostgreSQL, Redis, Kafka (CDC with Debezium), REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes (K8s), Docker, Terraform, CI/CD, observability · React, Ruby on Rails
+- Python (FastAPI, SQLAlchemy, Celery, NumPy, Pandas, SciPy, scikit-learn, LangChain, LangGraph), TypeScript/JavaScript (Node.js), Java, C#, Ruby, SQL · PostgreSQL, Redis, Kafka (CDC with Debezium), Weaviate, REST/GraphQL, OAuth 2.0/OIDC/SAML · AWS, GCP, Azure, Kubernetes (K8s), Docker, Terraform, CI/CD, observability · React, Ruby on Rails
 
 ## Education
 
 - B.Sc. Pure Mathematics (Minor: Business), Florida State University
+- Udacity Nanodegrees: Deep Learning Foundations (2017), Deep Reinforcement Learning (2019)
 - Languages: English, French

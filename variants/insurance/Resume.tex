@@ -145,18 +145,18 @@ An experienced leader who can scale products and teams from MVP to enterprise sc
 
   \begin{ressubsec}{Indico Data}{Boston, MA \; $\cdot$ \; Apr 2017 -- Sep 2026}{Vice President of Engineering \& Product}
     \rescontext{Agentic underwriting and claims platform for insurance carriers, built on an AI document intake and extraction pipeline.}
-    \resscope{Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization; managed engineers directly from 2019, later directors, engineering managers, and principal engineers. Owned the product roadmap, scoping and estimation, and customer discovery for two enterprise products and acted as the primary product manager.}
-    \ressubitem{Promoted three times over 9 years, from senior software engineer to backend engineering manager, then senior director of platform engineering, then VP}
-    \ressubitem{Player-coach throughout: mentored engineers from junior through principal, with several promoted into principal and director roles under me, and stayed hands-on with architecture, code review, and prototyping (about a quarter of my time)}
-    \ressubitem{Led the design and build of Indico Workspaces, an agentic underwriting and claims platform that processes submissions end-to-end with human-in-the-loop review, field-level provenance, and a closed set of agent actions}
-    \ressubitem{Led the transformation of Indico's core Intake product from a legacy ML-based tech stack to a modern generative-AI stack (LLM agents, RAG, evaluation, document intelligence), improving both customer retention and prospect conversion; controlled hallucination with verifier-model citations and enrichment against reference data (for example broker-of-record normalization)}
-    \ressubitem{Built Intake's LLM evaluation tooling: in-platform golden datasets, prompt-version comparison on precision/recall/F1 with span-level matching, and a review loop that grows test sets from accepted or corrected predictions; wrote the first version of the metric calculations}
-    \ressubitem{Drove agent-assisted development across engineering (with the CTO: coding agents such as Claude Code, Codex, Cursor, and Devin, plus code-review, log-analysis, and ticket agents) and product (prototyping with coding agents replaced static design mockups; requirement and roadmap agents)}
-    \ressubitem{Continuously improved engineering process and introduced a predictable release cadence, CI/CD and test-automation practices, and operational-readiness gates, meeting customer CVE/security SLAs}
-    \ressubitem{Directly managed DevOps for a single-tenant model (one AWS account and Kubernetes cluster per customer, Terraform and Crossplane); ran observability on OpenTelemetry, Prometheus, and SigNoz, including traces of agent execution for prompt debugging}
-    \ressubitem{Led a company-wide security audit and rebuild of infrastructure, developer tooling, deployment systems and customer isolation in 2026 (SSO and short-lived credentials across all infra access, GitOps-only change control, locked-down customer data access with change detection, rebuilt CI/CD and secrets management)}
-    \ressubitem{As an early engineer, was one of 4 engineers who re-architected Indico's SaaS API into Indico Intake; personally built core services (authentication, permissioning, model management, dataset and label storage) that set the base application structure}
-    \ressubitem{Intake grew into an Intelligent Document Processing platform handling billions of documents a year: one real-estate customer processes US title documents at up to 20{,}000 docs/hour, a logistics customer 15M images/day, and a lender 180{,}000 loan renewals/month}
+    \resscope{Member of the executive team reporting to the CEO. Led a 23-person engineering, DevOps, QA, and product organization, managing engineers directly from 2019. Owned the product roadmap, scoping and estimation, and customer discovery for two enterprise products as the primary product manager.}
+    \ressubitem{Promoted three times over 9 years, from senior software engineer to VP}
+    \ressubitem{Player-coach: promoted engineers to principal and director, with about a quarter of my time hands-on}
+    \ressubitem{Architected Workspaces: typed fields with document and agent provenance, human-in-the-loop review, and a closed set of agent actions applied by code, doubling as the prompt-injection defense}
+    \ressubitem{Moved Intake from legacy ML to generative AI, improving retention and conversion; curbed hallucination with verifier citations and reference-data enrichment (e.g., broker-of-record normalization)}
+    \ressubitem{Built Intake's LLM evaluation loop and its first metrics: in-platform golden datasets, prompt-version comparison on precision, recall, and F1, and reviewed predictions growing the test set}
+    \ressubitem{Drove agent-assisted development with the CTO: coding agents (Claude Code, Codex, Cursor, Devin) plus code-review, log-analysis, and ticket agents; coding-agent prototypes replaced design mockups}
+    \ressubitem{Managed DevOps for single-tenant delivery (one AWS account and K8s cluster per customer) and on-prem}
+    \ressubitem{Led a company-wide 2026 security audit and rebuild of infrastructure, tooling, and customer isolation}
+    \ressubitem{One of 4 engineers who re-architected the SaaS API into Intake; built auth, model, dataset services}
+    \ressubitem{Built the platform's early ML tooling: dataset management in Pandas, baseline classifiers in scikit-learn, and NumPy-based model weight export and serialization for serving, before the move to the generative stack}
+    \ressubitem{Scaled Intake to billions of documents a year: a real-estate customer at 20{,}000 title docs/hour, a logistics customer at 15M images/day, and a lender at 180{,}000 loan renewals/month}
   \end{ressubsec}
 
   \begin{ressubsec}{GMO LLC}{Boston, MA \; $\cdot$ \; Apr 2015 -- Apr 2017}{Senior Software Engineer}
@@ -178,23 +178,25 @@ An experienced leader who can scale products and teams from MVP to enterprise sc
   \begin{reslist}{Leadership}
     \ressubitem{Engineering organization management, org design, recruiting and hiring, coaching and mentorship, managing managers}
     \ressubitem{R\&D budgeting, cost optimization, vendor and contract negotiations}
-    \ressubitem{Agile delivery, SDLC maturity, QA and test strategy, reliability and on-call, secure development, incident response, executive escalation point for enterprise incidents}
+    \ressubitem{Agile delivery, SDLC maturity, QA and test strategy, reliability and on-call, secure development, incident response, AI governance and responsible-AI practices in regulated industries, executive escalation point for enterprise incidents}
   \end{reslist}
   \begin{reslist}{Product}
     \ressubitem{Product management, product strategy and vision, roadmap ownership, OKRs, release and capacity planning, requirements/PRDs, backlog prioritization}
     \ressubitem{UX and product design, rapid prototyping, customer discovery, positioning, GTM partnership, technical pre-sales}
   \end{reslist}
   \begin{reslist}{AI / ML}
-    \ressubitem{Generative AI, LLM agents, agentic orchestration, RAG, LLM-based evaluation, document intelligence, intelligent document processing (IDP)}
+    \ressubitem{Generative AI: LLM agents and agentic orchestration, MCP servers and tool integrations, RAG, embeddings and vector search, prompt engineering, LLM-based evaluation and golden datasets, guardrails, LLM observability and agent tracing, document intelligence / IDP}
+    \ressubitem{Classical ML: dataset management, baseline classifiers and evaluation (scikit-learn, Pandas, NumPy), model serialization for serving}
   \end{reslist}
   \begin{reslist}{Technical}
-    \ressubitem{Python (FastAPI, SQLAlchemy, Celery, LangChain), TypeScript/JavaScript (Node.js), Java, C\#, Ruby, SQL $\cdot$ PostgreSQL, Redis, Kafka (CDC with Debezium), REST/GraphQL, OAuth 2.0/OIDC/SAML $\cdot$ AWS, GCP, Azure, Kubernetes (K8s), Docker, Terraform, Crossplane, CI/CD, observability (OpenTelemetry, Prometheus, SigNoz) $\cdot$ React, Ruby on Rails}
+    \ressubitem{Python (FastAPI, SQLAlchemy, Celery, NumPy, Pandas, SciPy, scikit-learn, LangChain, LangGraph), TypeScript/JavaScript (Node.js), Java, C\#, Ruby, SQL $\cdot$ PostgreSQL, Redis, Kafka (CDC with Debezium), Weaviate, REST/GraphQL, OAuth 2.0/OIDC/SAML $\cdot$ AWS, GCP, Azure, Kubernetes (K8s), Docker, Terraform, Crossplane, CI/CD, observability (OpenTelemetry, Prometheus, SigNoz) $\cdot$ React, Ruby on Rails}
   \end{reslist}
 \end{ressection}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Education}
   \ressubitem{B.Sc. Pure Mathematics (Minor: Business), Florida State University}
+  \ressubitem{Udacity Nanodegrees: Deep Learning Foundations (2017), Deep Reinforcement Learning (2019)}
   \ressubitem{Languages: English, French}
 \end{ressection}
 
